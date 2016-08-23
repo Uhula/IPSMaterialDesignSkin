@@ -9,7 +9,9 @@
 5. [Changelog](#5-changelog) 
 6. [Sonstiges](#6-sonstiges) 
 
-![Beispiel 1](docs/example1.png?raw=true "Beispiel 1")
+[Beispiel Hell](docs/example1.png?raw=true "Beispiel 1")
+[Beispiel Dunkel](docs/example_dark.png?raw=true "Beispiel dunkel")
+[Beispiel Edititieren](docs/edit_example1.png?raw=true "Beispiel Editieren")
 
 ### 1. Funktionsumfang
 Basierend auf den originalen IP Symcon Skin stellt dieser Material Design Skin eine
@@ -45,6 +47,8 @@ zum originalen Skin vorgenommen:
 * alle Border werden durch "transparent" unsichtbar geschaltet
 * alle Hintergründe werden flach, also ohne Verlauf dargestellt
 * Kein Zwang, aber für das Layout wird empfohlen:
+
+
     SplitPane 
     +-- TabPane (Menü, fixe Höhe: 34px) "Kopfzeile"
     |   +-- InfoWidgets 1  

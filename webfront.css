@@ -117,17 +117,25 @@ body,
    Container
    -------------------------- */
 
+/*
 .ipsCategory>.container {
-  border-color: transparent;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+}
+*/
+
+.ipsCategory {
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.12), 1px 1px 3px rgba(255,255,255,0.12);
 }
 
 .ipsCategory>.container ,
 .ipsDialog>div 
 {
+  border-color: transparent;
   background-image: none;
-  background: #FFFFFF/*bcc*/;
+  background: transparent;
+  padding-right: 3%;
+  padding-top: 1%;
 }
 
 /* Container-Border */    
