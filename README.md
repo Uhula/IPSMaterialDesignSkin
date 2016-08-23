@@ -9,7 +9,7 @@
 5. [Changelog](#5-changelog) 
 6. [Sonstiges](#6-sonstiges) 
 
-![Bild1](documentation/example1.png?raw=true "Beispiel 1")
+[Bild1](docs/example1.png?raw=true "Beispiel 1")
 
 ### 1. Funktionsumfang
 Basierend auf den originalen IP Symcon Skin stellt dieser Material Design Skin eine
@@ -21,7 +21,7 @@ versehen. Handhabung, Design und Bedienung entsprechen dem normalen WebFront.
 Als Icons werden entweder die originalen IP Symcon Icons, oder Kopien derer, bei denen lediglich die 
 Zeichenfarbe "weiß" (stroke="#ffffff") gegen "schwarz" (stroke="#000000") getauscht wurde, verwendet. 
 
-Über das optionale Modul `git://github.com/Uhula/IPSMaterialDesignSkinOptions.git` lassen sich für den 
+Über das optionale Modul [IPS MDSO](git://github.com/Uhula/IPSMaterialDesignSkinOptions.git) lassen sich für den 
 Skin verschiedene Farbkombinationen (Themen) wählen, sowohl helle als auch dunkle Themen stehen zur Verfügung.
 
 
@@ -94,7 +94,7 @@ gibt `git://github.com/Uhula/IPSMaterialDesignSkinOptions.git`
 
 
 ### 5. Changelog
-Siehe `CHANGELOG.MD`  Datei.
+Siehe [ChangeLog](CHANGELOG.MD) Datei.
 
 
 ### 6. Sonstiges
