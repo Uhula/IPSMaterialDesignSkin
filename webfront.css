@@ -1,0 +1,480 @@
+/* ---------------------------------------------------------
+  SVG Manipulation - geht nur, wenn die SVGs "inline" sind,
+  nicht bei URLs
+.icon { fill: #800000 !important; }
+*/
+
+.link>.ipsIconPaintbrush {
+  background-image: url('icons_colored/Paintbrush.svg');
+}
+.link>.ipsIconGraph {
+  background-image: url('icons_colored/Graph.svg');
+}
+
+
+/* -------------------------
+   Globale Einstellungen
+   ------------------------- */
+
+body,
+.ipsTabPane>.navigation  {
+  font-family: Arial,sans-serif;
+  color: #000000/*fc*/;
+}
+
+.ipsWebFront,
+.ipsDialog.modal,
+.ipsContentChanger > .navigation
+{
+  background-image: none;
+  background: #FAFAFA/*bc*/;
+}
+
+/* --------------------------
+   Navigation
+   -------------------------- */
+   
+/* Oberste Navigationszeile TOP */
+.ipsWebFront>.ipsContainer>.top>div>.navigation
+{
+  background: #E0E0E0/*bch*/;
+}
+
+/* Statuszeile, wird an der height mit 34 px erkannt */
+.bottom[style*="height: 34px;"] .navigation
+{
+  box-shadow: 0 -3px 6px rgba(0,0,0,0.12), 0 -3px 6px rgba(0,0,0,0.24);
+  background: #E0E0E0/*bcn*/;
+}
+
+/* Navigationszeilen  */
+.ipsTabPane>.navigation,
+.ipsContentChanger >.navigation 
+{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.24);
+  background-image: none;
+  border-color: transparent;
+  background: #EEEEEE/*bcn*/;
+}
+   
+
+
+
+/* Navigation Textfarbe */
+.ipsTabPane>.navigation,
+.ipsContentChanger>.navigation 
+{
+  color: #000000/*fcn*/;
+}
+
+/* Aktives Element in Bars */
+.ipsTabPane>.navigation>.scroll>.buttons>div.active,
+/* wenn aktives Element = 1.Child, dann auch */
+.ipsTabPane>.navigation>.scroll>.buttons.subHidden>div.active:first-child 
+{
+  border-color: #388E3C/*ac*/;
+  font-weight: bold;
+  color: #000000/*fcn*/;
+}
+
+
+/* Buttons in Nav */
+.ipsTabPane>.navigation>.scroll>.buttons>div,
+/* wenn aktives Element = 1.Child, dann auch */
+.ipsTabPane>.navigation>.scroll>.buttons.subHidden>div:first-child 
+{
+  font-size: 1.1em;
+  line-height: 1.8em;
+  opacity : 1.0;
+  border-style: solid;
+  border-width: 0 0 4px 0;
+  border-color: transparent;
+  padding: 0 8px;
+}
+
+
+.navigation>.scroll>.buttons>div
+{ 
+  opacity: 0.84;
+}
+.navigation>.scroll>.buttons>.active
+{ 
+  opacity: 1.00; 
+}
+
+
+/* --------------------------
+   Info Widgets
+   -------------------------- */
+/* Uhr etwas größer */
+.ipsClockWidget>.title 
+{
+  font-size: 1.6em;
+  color: #000000/*fcn*/;
+}
+
+/* --------------------------
+   Container
+   -------------------------- */
+
+.ipsCategory>.container {
+  border-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+}
+
+.ipsCategory>.container ,
+.ipsDialog>div 
+{
+  background-image: none;
+  background: #FFFFFF/*bcc*/;
+}
+
+/* Container-Border */    
+.ipsSplitPane.border > .top,
+.ipsSplitPane.border > .left {
+  border-color: transparent;
+}
+
+/* Child Container */
+.ipsCategory>.container .childContainers>div {
+  border-color: transparent;
+  margin: 4px 0;
+}
+
+/* --------------------------
+   Werte
+   -------------------------- */
+
+/* Werte und Texte  */       
+.ipsCategory>.container .extended>.textBox>div,
+.ipsCategory>.container .extended>.textBox>textarea,
+.ipsCategory>.container .content .visual>.text>input[type=text],
+.ipsCategory>.container .content .visual>.text, 
+.ipsCategory>.container .content .visual>.enum>div, 
+.ipsCategory>.container .content .visual>.selector>div,
+.ipsCategory>.container .extended>.textBox>div 
+{
+  color: #212121/*fcl*/;
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* Nicht selektierte Elemente */
+.ipsCategory>.container .content .visual>.enum>div,
+.ipsCategory>.container .content .visual>.selector>div,
+.ipsCategory>.container .extended>.textBox>div {
+  font-weight: normal;
+  font-size: 1.0em;
+  color: #388E3C/*ac*/; 
+  background-image: none;
+}
+
+/* Werte, selektiert */
+.ipsCategory>.container .content .visual>.enum>.selected,
+.ipsCategory>.container .content .visual>.selector>.selected 
+ {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #388E3C/*ac*/; 
+  background-color: transparent;
+  background-image: none;
+}
+
+/* --------------------------
+   Eingabefelder
+   -------------------------- */
+.ipsDialog.ipsEditorDialog>div>.content>ol>li>input[type=text], 
+.ipsDialog.ipsEditorDialog>div>.content>ol>li>select, 
+.ipsDialog.ipsEditorDialog>div>.content>select {
+  background: #FFFFFF/*bc*/;
+  border: 1px solid #388E3C/*ac*/;
+  color: #000000/*fc*/;
+}
+
+/* --------------------------
+   Slider
+   -------------------------- */
+
+/* Slider Background */
+.ipsCategory>.container .content .visual>.slider>div>.background  {
+  background-image: none;
+  top:12px;
+  height:5px;
+  background: #388E3C/*ac*/; 
+  opacity: 0.33;
+}
+/* Slider Bar */
+.ipsCategory>.container .content .visual>.slider>div>.bar {
+  background-image: none;
+  top:0px;
+  height:28px;
+  background: #388E3C/*ac*/; 
+  background: linear-gradient(transparent 40%, #388E3C/*ac*/ 40%, #388E3C/*ac*/ 60%, transparent 60%);  
+  border: none;
+  opacity: 1.0;
+}
+/* Slider Anfasser */
+.ipsCategory>.container .content .visual>.slider>div>.bar:after{
+  padding: 0px 10px 8px 10px;
+  background: #388E3C/*ac*/;
+  border-radius: 16px;
+  color: #388E3C/*ac*/;
+  content: '*';
+}
+/* Slider Text */
+.ipsCategory>.container .content .visual>.slider>div>.text {
+  color: #388E3C/*ac*/;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-shadow: 0px 0px 4px #FFFFFF/*bc*/;
+  top: -1px;
+}
+
+.ipsCategory>.container .content .link>.keyboardLink,
+.ipsCategory>.container .content .link>.chartLink,
+.ipsCategory>.container .content .link>.timerLink,
+.ipsCategory>.container .content .link>.runLink,
+.ipsCategory>.container .content .link>.colorLink {
+}
+
+
+/* --------------------------
+   Chart
+   -------------------------- */
+.ipsChart,
+.ipsChartDialog .content {
+  background-image: none;
+  background: #404040/*bcg*/; 
+}
+
+.ipsChart {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
+}
+
+/* Chartdialoge groß */
+.ipsChartDialog>div {
+  bottom: 5% !important;
+  left: 3% !important;
+  right: 3% !important;
+  top: 5% !important;
+}
+
+
+
+/* --------------------------
+   Überschriften
+   ipsContainer container nestedUneven ipsVariable
+   -------------------------- */
+
+/* Container Überschriften */
+.ipsCategory>.ipsContainer>.content>.title
+{
+  font-size : 1.2em;
+  font-weight: bold;
+  color: #808080/*fch*/;
+}
+
+/* Zwischenüberschriften */
+.ipsContainer>.content>.ipsIconMinus + .title
+{
+  font-size : 1.1em;
+  font-weight: bold;
+  color: #808080/*fch*/;
+}
+
+
+/* --------------------------
+   Sonstiges
+   -------------------------- */
+
+/* iFrame ohne Border */
+iframe {
+  border-style: solid;
+  border-color: transparent;
+}
+
+
+/*
+@media (max-width: 480px) {
+.ipsCategory>.container {
+  min-width:100%;
+  }
+}
+*/
+
+
+.ipsCategory>.container .content .visual>.text.colored {
+    background: transparent;
+}
+
+
+.ipsCategory>.container .childContainers {
+    background: transparent;
+    border-color: transparent;
+}
+
+.ipsCategory>.container .extended>.media {
+    background: transparent;
+    border-color: transparent;
+}
+
+
+
+
+
+/* --- Dialoge */
+/* aussen */
+.ipsDialog.modal {
+  background-image: none;
+  background-color: rgba(0,0,0, 0.25);
+}
+
+/* innen */
+.ipsDialog>div {
+  background: #FAFAFA/*bc*/;
+  border-color: transparent;
+  box-shadow: 0 0 4px rgba(0,0,0,0.48), 0 14px 28px rgba(0,0,0,0.24), 0 10px 10px   rgba(0,0,0,0.48);
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  font-size: 17px;
+}
+
+.ipsDialog>div>.content {
+  right: 0px;
+}
+
+/* Dialogüberschrift */
+.ipsDialog>div>.title {
+  font-size : 1.2em;
+  font-weight: bold;
+  color: #808080/*fch*/;
+}
+
+.ipsDialog>div>.titleLine {
+    background-image: none;
+}
+.ipsDialog>div>.bottomLine {
+    background-image: none;
+}
+.ipsDialog.ipsColorDialog .verticalLine {
+    background-image: none;
+}
+
+.ipsDialog.ipsEventDialog>div>.content>.outerCenter>.center>.linesContainer>.touchContainer>.sliderContainer>.slider {
+    background-image: none;
+}
+
+.ipsLogin {
+    background-image: none;
+}
+
+.ipsTabPane>.content {
+    background-image: none;
+}
+
+.ipsCategory > .container .extended > .textBox, 
+.ipsCategory > .container .extended > .htmlBox, 
+.ipsCategory > .container .extended > .mailBox {
+    background-image: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+/* ---------------------------------------------------------
+   IPS Edit mode 
+   --------------------------------------------------------- */
+
+.ipsDialog.ipsEditorDialog>div,
+.editable  .content.exclusive,
+.new
+{
+  border-style: dotted !important;
+  border-width: 1px;
+  border-color: #0D47A1 !important;
+}
+
+.ipsDialog.ipsEditorDialog>div>.content {
+  font-size: 15px;
+  right: 0px;
+}
+
+.new,
+.new-text,
+.edit,
+.ipsEditorDialog>div,
+.ipsEditorSelectDialog>div,
+.ipsEditorSelectDialog .iconSmall,
+.ipsEditorDialog .iconSmall,
+.ipsEditorDialog .content 
+{
+  background-color: #2196F3;
+  opacity: 1.0 !important;
+}
+
+.ipsEditorSelectDialog .treeIcon, 
+.ipsEditorSelectDialog label
+{
+  opacity: 1.0 !important;
+}
+.ipsDialog.ipsEditorDialog>div>.content>ol>li>select>option, 
+.ipsDialog.ipsEditorDialog>div>.content>select>option
+{
+  background-color: #FFFFFF;
+}
+
+.save.icon,
+.edit.icon,
+.edit.iconSmall,
+.edit.iconExtraSmall,
+.new.icon,
+.new-text.iconExtraSmall
+{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 50%;  
+  padding: 2px 4px 2px 0px;
+  border-width: 0px !important;
+  background-color: #2196F3;
+}
+
+.ipsWebFront.editable>.save
+{
+  background-color: #8BC34A;
+  border-width: 0px !important;
+  opacity: 1.0 !important;
+}
+
+.new:hover,
+.new-text:hover,
+.edit:hover,
+.save.icon:hover,
+.edit.icon:hover,
+.edit.iconSmall:hover,
+.edit.iconExtraSmall:hover,
+.new.icon:hover,
+.new-text.iconExtraSmall:hover
+{
+  box-shadow: 0 0 4px rgba(0,0,0,0.48), 0 14px 28px rgba(0,0,0,0.24), 0 10px 10px   rgba(0,0,0,0.48);
+}
+
+
+/*
+input, textarea, keygen, select, button {
+  font: 17px Arial;
+}  
+*/
+
+/*  Hierarchie
+
+ipsWebFront
+--ipsContainer
+----navigation
+----content
+------category
+
+*/
