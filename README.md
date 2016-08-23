@@ -9,7 +9,7 @@
 5. [Changelog](#5-changelog) 
 6. [Sonstiges](#6-sonstiges) 
 
-[Bild1](docs/example1.png?raw=true "Beispiel 1")
+![Beispiel 1](docs/example1.png?raw=true "Beispiel 1")
 
 ### 1. Funktionsumfang
 Basierend auf den originalen IP Symcon Skin stellt dieser Material Design Skin eine
@@ -21,7 +21,7 @@ versehen. Handhabung, Design und Bedienung entsprechen dem normalen WebFront.
 Als Icons werden entweder die originalen IP Symcon Icons, oder Kopien derer, bei denen lediglich die 
 Zeichenfarbe "weiß" (stroke="#ffffff") gegen "schwarz" (stroke="#000000") getauscht wurde, verwendet. 
 
-Über das optionale Modul [IPS MDSO](git://github.com/Uhula/IPSMaterialDesignSkinOptions.git) lassen sich für den 
+Über das optionale Modul [IPS MaterialDesignSkinOptions](https://github.com/Uhula/IPSMaterialDesignSkinOptions) lassen sich für den 
 Skin verschiedene Farbkombinationen (Themen) wählen, sowohl helle als auch dunkle Themen stehen zur Verfügung.
 
 
@@ -45,22 +45,22 @@ zum originalen Skin vorgenommen:
 * alle Border werden durch "transparent" unsichtbar geschaltet
 * alle Hintergründe werden flach, also ohne Verlauf dargestellt
 * Kein Zwang, aber für das Layout wird empfohlen:
-   SplitPane 
-   +-- TabPane (Menü, fixe Höhe: 34px) "Kopfzeile"
-   |   +-- InfoWidgets 1  
-   |   +-- InfoWidgets 2 usw  
-   +-- SplitPane
-       +-- TabPane (Menü, variable Höhe) "Navigation"
-       |   +-- TabPane (Menü) "Unternavigation 1"
-       |   |   +-- SplitPane "Datenanzeige", horz/vert geteilt
-       |   |   ...
-       |   +-- SplitPane "Datenanzeige", horz/vert geteilt
-       |   |   ...
-       |   +-- Kategorie "Datenanzeige", Vollbild
-       |   |   ...
-       +-- TabPane (Menü, fixe Höhe: 34 px) "Statuszeile"
-           +-- InfoWidgets 1  
-           +-- InfoWidgets 2 usw  
+    SplitPane 
+    +-- TabPane (Menü, fixe Höhe: 34px) "Kopfzeile"
+    |   +-- InfoWidgets 1  
+    |   +-- InfoWidgets 2 usw  
+    +-- SplitPane
+        +-- TabPane (Menü, variable Höhe) "Navigation"
+        |   +-- TabPane (Menü) "Unternavigation 1"
+        |   |   +-- SplitPane "Datenanzeige", horz/vert geteilt
+        |   |   ...
+        |   +-- SplitPane "Datenanzeige", horz/vert geteilt
+        |   |   ...
+        |   +-- Kategorie "Datenanzeige", Vollbild
+        |   |   ...
+        +-- TabPane (Menü, fixe Höhe: 34 px) "Statuszeile"
+            +-- InfoWidgets 1  
+            +-- InfoWidgets 2 usw  
 * Kopfzeile
   * Die erste Menüzeile wird als Kopfzeile angesehen und in dunklerer
     Themenfarbe dargestellt als die folgenden Menüs. Es empfiehlt sich hier nur
@@ -94,7 +94,7 @@ gibt `git://github.com/Uhula/IPSMaterialDesignSkinOptions.git`
 
 
 ### 5. Changelog
-Siehe [ChangeLog](CHANGELOG.MD) Datei.
+Siehe [ChangeLog](./CHANGELOG.MD).
 
 
 ### 6. Sonstiges
