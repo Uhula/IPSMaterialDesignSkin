@@ -27,7 +27,7 @@ body,
 .ipsContentChanger > .navigation
 {
   background-image: none;
-  background: #FAFAFA/*bc*/;
+  background: #FFFFFF/*bc*/;
 }
 
 /* --------------------------
@@ -44,7 +44,7 @@ body,
 .bottom[style*="height: 34px;"] .navigation
 {
   box-shadow: 0 -3px 6px rgba(0,0,0,0.12), 0 -3px 6px rgba(0,0,0,0.24);
-  background: #E0E0E0/*bcn*/;
+  background: #E0E0E0/*bch*/;
 }
 
 /* Navigationszeilen  */
@@ -124,8 +124,12 @@ body,
 }
 */
 
-.ipsCategory {
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.12), 1px 1px 3px rgba(255,255,255,0.12);
+.left .ipsCategory {
+  border-right: 1px solid rgba(0,0,0,0.12);
+}
+
+.top .ipsCategory {
+  border-bottom: 1px solid rgba(0,0,0,0.12);
 }
 
 .ipsCategory>.container ,
@@ -133,14 +137,14 @@ body,
 {
   border-color: transparent;
   background-image: none;
-  background: transparent;
+  background: #FFFFFF/*bcc*/;
   padding-right: 3%;
   padding-top: 1%;
 }
 
 /* Container-Border */    
-.ipsSplitPane.border > .top,
-.ipsSplitPane.border > .left {
+.ipsSplitPane.border >.top,
+.ipsSplitPane.border >.left {
   border-color: transparent;
 }
 
@@ -394,6 +398,11 @@ iframe {
 }
 
 
+.ipsLogin {
+    background-image: none;
+    background-color: transparent;
+}
+
 /* ---------------------------------------------------------
    IPS Edit mode 
    --------------------------------------------------------- */
@@ -433,7 +442,7 @@ iframe {
 .ipsDialog.ipsEditorDialog>div>.content>ol>li>select>option, 
 .ipsDialog.ipsEditorDialog>div>.content>select>option
 {
-  background-color: #FFFFFF;
+  background-color: #2196F3;
 }
 
 .save.icon,

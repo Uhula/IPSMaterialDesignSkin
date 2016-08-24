@@ -9,11 +9,10 @@
 5. [Changelog](#5-changelog) 
 6. [Sonstiges](#6-sonstiges) 
 
-[Beispiel Hell](docs/example1.png?raw=true "Beispiel 1")
-[Beispiel Dunkel](docs/example_dark.png?raw=true "Beispiel dunkel")
-[Beispiel Edititieren](docs/edit_example1.png?raw=true "Beispiel Editieren")
+![Beispiel Grau](docs/grau.png?raw=true)
 
-### 1. Funktionsumfang
+
+###:white_circle: 1. Funktionsumfang
 Basierend auf den originalen IP Symcon Skin stellt dieser Material Design Skin eine
 Alternative dar, die sich an das Material Design von Google anlehnt. 
 
@@ -26,8 +25,13 @@ Zeichenfarbe "weiß" (stroke="#ffffff") gegen "schwarz" (stroke="#000000") getau
 Über das optionale Modul [IPS MaterialDesignSkinOptions](https://github.com/Uhula/IPSMaterialDesignSkinOptions) lassen sich für den 
 Skin verschiedene Farbkombinationen (Themen) wählen, sowohl helle als auch dunkle Themen stehen zur Verfügung.
 
+* [Beispiel Grau](docs/grau.png?raw=true "Beispiel grau")
+* [Beispiel Dunkelgrau](docs/dgrau.png?raw=true "Beispiel dunkelgrau")
+* [Beispiel Grau](docs/grau.png?raw=true "Beispiel grau")
+* [Beispiel Grau Edititieren](docs/grau_edit.png?raw=true "Beispiel Editieren")
 
-### 2. Systemanforderungen
+
+###:white_circle: 2. Systemanforderungen
 * IP-Symcon ab Version 4.x
 
 
@@ -46,25 +50,6 @@ Um den Material Design Style zu erhalten, werden in der CSS Datei folgenden Eins
 zum originalen Skin vorgenommen: 
 * alle Border werden durch "transparent" unsichtbar geschaltet
 * alle Hintergründe werden flach, also ohne Verlauf dargestellt
-* Kein Zwang, aber für das Layout wird empfohlen:
-
-
-    SplitPane 
-    +-- TabPane (Menü, fixe Höhe: 34px) "Kopfzeile"
-    |   +-- InfoWidgets 1  
-    |   +-- InfoWidgets 2 usw  
-    +-- SplitPane
-        +-- TabPane (Menü, variable Höhe) "Navigation"
-        |   +-- TabPane (Menü) "Unternavigation 1"
-        |   |   +-- SplitPane "Datenanzeige", horz/vert geteilt
-        |   |   ...
-        |   +-- SplitPane "Datenanzeige", horz/vert geteilt
-        |   |   ...
-        |   +-- Kategorie "Datenanzeige", Vollbild
-        |   |   ...
-        +-- TabPane (Menü, fixe Höhe: 34 px) "Statuszeile"
-            +-- InfoWidgets 1  
-            +-- InfoWidgets 2 usw  
 * Kopfzeile
   * Die erste Menüzeile wird als Kopfzeile angesehen und in dunklerer
     Themenfarbe dargestellt als die folgenden Menüs. Es empfiehlt sich hier nur
@@ -90,7 +75,26 @@ zum originalen Skin vorgenommen:
 * um die Darstellung der Werte und Schaltflächen sinnvoll nutzen zu können,
 sollten Farbzuverweisungen in den Variablen-Stilen nur dort vorgenommen
 werden, wo sie notwendig sind. Z.B. bei Alarm- und Fehlerzuständen.
-* ...
+* Kein Zwang, aber für das Layout wird empfohlen:
+
+```
+    SplitPane 
+    +-- TabPane (Menü, fixe Höhe: 34px) "Kopfzeile"
+    |   +-- InfoWidgets 1  
+    |   +-- InfoWidgets 2 usw  
+    +-- SplitPane
+        +-- TabPane (Menü, variable Höhe) "Navigation"
+        |   +-- TabPane (Menü) "Unternavigation 1"
+        |   |   +-- SplitPane "Datenanzeige", horz/vert geteilt
+        |   |   ...
+        |   +-- SplitPane "Datenanzeige", horz/vert geteilt
+        |   |   ...
+        |   +-- Kategorie "Datenanzeige", Vollbild
+        |   |   ...
+        +-- TabPane (Menü, fixe Höhe: 34 px) "Statuszeile"
+            +-- InfoWidgets 1  
+            +-- InfoWidgets 2 usw  
+```
 
 #### Wie kann man die Farbeinstellungen in der CSS anpassen ?
 Kann man zwar manuell machen, muss man aber nicht, da es hierfür ein weiteres Modul
@@ -98,7 +102,7 @@ gibt `git://github.com/Uhula/IPSMaterialDesignSkinOptions.git`
 
 
 ### 5. Changelog
-Siehe [ChangeLog](./CHANGELOG.MD).
+Siehe :link:[:link:ChangeLog](./CHANGELOG.md).
 
 
 ### 6. Sonstiges
@@ -115,3 +119,5 @@ Viele Wünsche gibt es nicht, jedoch würde es die CSS Möglichkeiten deutlich e
 wenn jede Instance zusätzlich eine Property "CSS classes" hätte, die man frei eingeben kann und die
 dann mit in <div class="... myclasses ..."> gerendert wird  
 
+
+:copyright:2016ff Uhula
