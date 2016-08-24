@@ -12,7 +12,7 @@
 ![Beispiel Grau](docs/grau.png?raw=true)
 
 
-###:white_circle: 1. Funktionsumfang
+### 1. Funktionsumfang
 Basierend auf den originalen IP Symcon Skin stellt dieser Material Design Skin eine
 Alternative dar, die sich an das Material Design von Google anlehnt. 
 
@@ -27,18 +27,18 @@ Skin verschiedene Farbkombinationen (Themen) wählen, sowohl helle als auch dunk
 
 * [Beispiel Grau](docs/grau.png?raw=true "Beispiel grau")
 * [Beispiel Dunkelgrau](docs/dgrau.png?raw=true "Beispiel dunkelgrau")
-* [Beispiel Grau](docs/grau.png?raw=true "Beispiel grau")
+* [Beispiel Petrol](docs/petrol.png?raw=true "Beispiel petrol")
 * [Beispiel Grau Edititieren](docs/grau_edit.png?raw=true "Beispiel Editieren")
 
 
-###:white_circle: 2. Systemanforderungen
-* IP-Symcon ab Version 4.x
+### 2. Systemanforderungen
+* IP-Symcon ab Version 4.0
 
 
 ### 3. Installation
 Im Objektbaum der IP Symcon Managment Console über die Kern-Instanz "Skins" folgende URL hinzufügen:
 `git://github.com/Uhula/IPSMaterialDesignSkin.git`
-Die Skin wird hinzugefügt und kann anschließend verwendet werden.
+Der Skin wird hinzugefügt und kann anschließend verwendet werden.
 
 Die Gesamtgröße beträgt, bedingt durch die SVG Icons, rund 2.0 MB.
 
@@ -102,7 +102,7 @@ gibt `git://github.com/Uhula/IPSMaterialDesignSkinOptions.git`
 
 
 ### 5. Changelog
-Siehe :link:[:link:ChangeLog](./CHANGELOG.md).
+Siehe [:link:ChangeLog](./CHANGELOG.md).
 
 
 ### 6. Sonstiges
