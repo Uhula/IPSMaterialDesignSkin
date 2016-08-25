@@ -19,7 +19,7 @@
 body,
 .ipsTabPane>.navigation  {
   font-family: Arial,sans-serif;
-  color: #000000/*fc*/;
+  color: rgba(0,0,0,0.9)/*fcl*/;
 }
 
 .ipsWebFront,
@@ -27,7 +27,7 @@ body,
 .ipsContentChanger > .navigation
 {
   background-image: none;
-  background: #FFFFFF/*bc*/;
+  background: #FAFAFA/*bc*/;
 }
 
 /* --------------------------
@@ -37,28 +37,25 @@ body,
 /* Oberste Navigationszeile TOP */
 .ipsWebFront>.ipsContainer>.top>div>.navigation
 {
-  background: #E0E0E0/*bch*/;
+  background: #E0E0E0/*bca*/;
 }
 
 /* Statuszeile, wird an der height mit 34 px erkannt */
 .bottom[style*="height: 34px;"] .navigation
 {
-  box-shadow: 0 -3px 6px rgba(0,0,0,0.12), 0 -3px 6px rgba(0,0,0,0.24);
-  background: #E0E0E0/*bch*/;
+  box-shadow: 0 0 2px rgba(255,255,255,0.24);
+  background: #E0E0E0/*bca*/;
 }
 
 /* Navigationszeilen  */
 .ipsTabPane>.navigation,
 .ipsContentChanger >.navigation 
 {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.24);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12)/*sca1*/, 0 3px 6px rgba(0,0,0,0.24)/*sca2*/;
   background-image: none;
   border-color: transparent;
   background: #EEEEEE/*bcn*/;
 }
-   
-
-
 
 /* Navigation Textfarbe */
 .ipsTabPane>.navigation,
@@ -76,7 +73,6 @@ body,
   font-weight: bold;
   color: #000000/*fcn*/;
 }
-
 
 /* Buttons in Nav */
 .ipsTabPane>.navigation>.scroll>.buttons>div,
@@ -116,43 +112,29 @@ body,
 /* --------------------------
    Container
    -------------------------- */
-
-/*
-.ipsCategory>.container {
-  border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
-}
-*/
-
-.left .ipsCategory {
-  border-right: 1px solid rgba(0,0,0,0.12);
-}
-
-.top .ipsCategory {
-  border-bottom: 1px solid rgba(0,0,0,0.12);
-}
-
-.ipsCategory>.container ,
-.ipsDialog>div 
-{
+.ipsCategory>.container  {
   border-color: transparent;
   background-image: none;
-  background: #FFFFFF/*bcc*/;
-  padding-right: 3%;
-  padding-top: 1%;
+  background: transparent;
 }
 
-/* Container-Border */    
 .ipsSplitPane.border >.top,
 .ipsSplitPane.border >.left {
   border-color: transparent;
 }
 
-/* Child Container */
 .ipsCategory>.container .childContainers>div {
   border-color: transparent;
   margin: 4px 0;
 }
+   
+/* Hintergrundfarbe und Schatten je nach SplitPane-Border */   
+.border .ipsCategory>.container {
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12)/*scc1*/, 0 1px 3px rgba(0,0,0,0.24)/*scc2*/;
+  background: #FFFFFF/*bcc*/;
+}
+
 
 /* --------------------------
    Werte
@@ -167,7 +149,7 @@ body,
 .ipsCategory>.container .content .visual>.selector>div,
 .ipsCategory>.container .extended>.textBox>div 
 {
-  color: #212121/*fcl*/;
+  color: #000000/*fcv*/;
   font-weight: bold;
   font-size: 1.1em;
   background-color: transparent;
@@ -235,6 +217,7 @@ body,
   border-radius: 16px;
   color: #388E3C/*ac*/;
   content: '*';
+  box-shadow: 0 0 3px rgba(0,0,0,0.12)/*scc1*/, 0 1px 2px rgba(0,0,0,0.24)/*scc2*/;
 }
 /* Slider Text */
 .ipsCategory>.container .content .visual>.slider>div>.text {
@@ -259,11 +242,11 @@ body,
 .ipsChart,
 .ipsChartDialog .content {
   background-image: none;
-  background: #404040/*bcg*/; 
+  background: #606060/*bcg*/; 
 }
 
 .ipsChart {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12)/*scc1*/, 0 1px 3px rgba(0,0,0,0.24)/*scc2*/;
 }
 
 /* Chartdialoge groß */
@@ -286,7 +269,7 @@ body,
 {
   font-size : 1.2em;
   font-weight: bold;
-  color: #808080/*fch*/;
+  color: rgba(0,0,0,0.5)/*fch*/;
 }
 
 /* Zwischenüberschriften */
@@ -294,7 +277,7 @@ body,
 {
   font-size : 1.1em;
   font-weight: bold;
-  color: #808080/*fch*/;
+  color: rgba(0,0,0,0.5)/*fch*/;
 }
 
 
@@ -335,26 +318,29 @@ iframe {
 
 
 
+/* --------------------------
+   Dialoge
+   -------------------------- */
 
-
-/* --- Dialoge */
 /* aussen */
 .ipsDialog.modal {
   background-image: none;
-  background-color: rgba(0,0,0, 0.25);
+  background-color: rgba(0,0,0, 0.33);
 }
 
 /* innen */
 .ipsDialog>div {
+  background-image: none;
   background: #FAFAFA/*bc*/;
   border-color: transparent;
-  box-shadow: 0 0 4px rgba(0,0,0,0.48), 0 14px 28px rgba(0,0,0,0.24), 0 10px 10px   rgba(0,0,0,0.48);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25)/*scd1*/, 0 10px 10px rgba(0,0,0,0.22)/*scd2*/;
   bottom: 10%;
   left: 10%;
   right: 10%;
   top: 10%;
   font-size: 17px;
 }
+
 
 .ipsDialog>div>.content {
   right: 0px;
@@ -442,7 +428,7 @@ iframe {
 .ipsDialog.ipsEditorDialog>div>.content>ol>li>select>option, 
 .ipsDialog.ipsEditorDialog>div>.content>select>option
 {
-  background-color: #2196F3;
+  background-color: #FAFAFA/*bc*/;
 }
 
 .save.icon,
@@ -452,7 +438,7 @@ iframe {
 .new.icon,
 .new-text.iconExtraSmall
 {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 0 4px rgba(0,0,0,0.48)/*scd1*/, 0 14px 28px rgba(0,0,0,0.24)/*scd2*/;
   border-radius: 50%;  
   padding: 2px 4px 2px 0px;
   border-width: 0px !important;
@@ -476,7 +462,8 @@ iframe {
 .new.icon:hover,
 .new-text.iconExtraSmall:hover
 {
-  box-shadow: 0 0 4px rgba(0,0,0,0.48), 0 14px 28px rgba(0,0,0,0.24), 0 10px 10px   rgba(0,0,0,0.48);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.48)/*scd1*/, 0 10px 10px rgba(0,0,0,0.24)/*scd2*/;
+  transition: all 0.2s ease-in-out;
 }
 
 
