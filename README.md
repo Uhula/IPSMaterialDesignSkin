@@ -9,7 +9,11 @@
 5. [Changelog](#5-changelog) 
 6. [Sonstiges](#6-sonstiges) 
 
+<<<<<<< HEAD
 ![Beispiel grau_blau](docs/grau_blau.png?raw=true)
+=======
+![Beispiel Grau](docs/grau.png?raw=true)
+>>>>>>> origin/master
 
 
 ### 1. Funktionsumfang
@@ -25,6 +29,7 @@ Zeichenfarbe "weiß" (stroke="#ffffff") gegen "schwarz" (stroke="#000000") getau
 Über das optionale Modul [IPS MaterialDesignSkinOptions](https://github.com/Uhula/IPSMaterialDesignSkinOptions) lassen sich für den 
 Skin verschiedene Farbkombinationen (Themen) wählen, sowohl helle als auch dunkle Themen stehen zur Verfügung.
 
+<<<<<<< HEAD
 * [Beispiel grau_blau_schatten](docs/grau_blau_schatten.png?raw=true "grau_blau_schatten")
 * [Beispiel grau_blau](docs/grau_blau.png?raw=true "Beispiel grau_blau")
 * [Beispiel grau_blau_schatten_edit](docs/grau_blau_schatten_edit.png?raw=true "Beispiel grau_blau_schatten_edit")
@@ -36,6 +41,16 @@ Skin verschiedene Farbkombinationen (Themen) wählen, sowohl helle als auch dunk
 
 ### 2. Systemanforderungen
 * IP-Symcon Version 4.0  (4.1 noch nicht getestet!)
+=======
+* [Beispiel Grau](docs/grau.png?raw=true "Beispiel grau")
+* [Beispiel Dunkelgrau](docs/dgrau.png?raw=true "Beispiel dunkelgrau")
+* [Beispiel Petrol](docs/petrol.png?raw=true "Beispiel petrol")
+* [Beispiel Grau Edititieren](docs/grau_edit.png?raw=true "Beispiel Editieren")
+
+
+### 2. Systemanforderungen
+* IP-Symcon ab Version 4.0
+>>>>>>> origin/master
 
 
 ### 3. Installation
