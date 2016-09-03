@@ -37,22 +37,14 @@ body,
 /* Oberste Navigationszeile TOP */
 .ipsWebFront>.ipsContainer>.top>div>.navigation
 {
-<<<<<<< HEAD
   background: #616161/*bca*/;
-=======
-  background: #E0E0E0/*bca*/;
->>>>>>> origin/master
 }
 
 /* Statuszeile, wird an der height mit 34 px erkannt */
 .bottom[style*="height: 34px;"] .navigation
 {
   box-shadow: 0 0 2px rgba(255,255,255,0.24);
-<<<<<<< HEAD
   background: #616161/*bca*/;
-=======
-  background: #E0E0E0/*bca*/;
->>>>>>> origin/master
 }
 
 /* Navigationszeilen  */
@@ -116,7 +108,6 @@ body,
   border-color: transparent;
   background-image: none;
   background: transparent;
-<<<<<<< HEAD
 }
 
 /* 
@@ -137,10 +128,6 @@ body,
   box-shadow: 0 1px 1px rgba(0,0,0,0.12)/*scc1*/;
 }
 
-=======
-}
-
->>>>>>> origin/master
 .ipsSplitPane.border >.top,
 .ipsSplitPane.border >.left {
   border-color: transparent;
@@ -151,16 +138,6 @@ body,
   margin: 4px 0;
 }
    
-<<<<<<< HEAD
-=======
-/* Hintergrundfarbe und Schatten je nach SplitPane-Border */   
-.border .ipsCategory>.container {
-  border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.12)/*scc1*/, 0 1px 3px rgba(0,0,0,0.24)/*scc2*/;
-  background: #FFFFFF/*bcc*/;
-}
->>>>>>> origin/master
-
 
 /* --------------------------
    Werte
@@ -184,11 +161,6 @@ body,
 .ipsCategory>.container .extended>.textBox>div 
 {
   color: #000000/*fcv*/;
-<<<<<<< HEAD
-=======
-  font-weight: bold;
-  font-size: 1.1em;
->>>>>>> origin/master
   background-color: transparent;
   border-color: transparent;
   font-weight: normal;
@@ -287,8 +259,6 @@ body,
 /* --------------------------
    Links und Buttons
    -------------------------- */
-<<<<<<< HEAD
-
 .link {
   background:#64B5F6/*ac*/;
   box-shadow: 0 0 3px rgba(0,0,0,0.12)/*scc1*/, 0 1px 2px rgba(0,0,0,0.24)/*scc2*/;
@@ -298,22 +268,9 @@ body,
   display: block!important;
 }
 
-    
-
-
 .color>div {
   box-shadow: 0 0 3px rgba(0,0,0,0.12)/*scc1*/, 0 1px 2px rgba(0,0,0,0.24)/*scc2*/;
   border-radius:2px;
-=======
-.ipsChart,
-.ipsChartDialog .content {
-  background-image: none;
-  background: #606060/*bcg*/; 
-}
-
-.ipsChart {
-  box-shadow: 0 1px 2px rgba(0,0,0,0.12)/*scc1*/, 0 1px 3px rgba(0,0,0,0.24)/*scc2*/;
->>>>>>> origin/master
 }
 
 
@@ -398,30 +355,18 @@ iframe {
    Dialoge
    -------------------------- */
 
-<<<<<<< HEAD
 /* aussen - abdunkeln des Rests */
 .ipsDialog.modal {
   background-image: none;
   background-color: rgba(0,0,0, 0.80);
-=======
-/* aussen */
-.ipsDialog.modal {
-  background-image: none;
-  background-color: rgba(0,0,0, 0.33);
->>>>>>> origin/master
 }
 
 /* innen */
 .ipsDialog>div {
   background-image: none;
-<<<<<<< HEAD
   background: #757575/*bcn*/;
   border-color: transparent;
   border-radius: 2px;
-=======
-  background: #FAFAFA/*bc*/;
-  border-color: transparent;
->>>>>>> origin/master
   box-shadow: 0 14px 28px rgba(0,0,0,0.25)/*scd1*/, 0 10px 10px rgba(0,0,0,0.22)/*scd2*/;
   bottom: 10%;
   left: 10%;
@@ -507,8 +452,6 @@ img {
     background-color: transparent;
 }
 
-<<<<<<< HEAD
-
 
 .ipsNotifications>.ipsNotification{
   border-radius: 3px;
@@ -536,8 +479,6 @@ img {
   width: 95%;
   top: 16px;
 }
-=======
->>>>>>> origin/master
 /* ---------------------------------------------------------
    IPS Edit mode 
    --------------------------------------------------------- */
