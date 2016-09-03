@@ -6,9 +6,9 @@
 <g>
 	<circle fill="#FFFFFF" cx="16.017" cy="23.585" r="1.091"/>
 	
-		<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.028" y1="12.804" x2="16.028" y2="20.358"/>
+		<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.028" y1="12.804" x2="16.028" y2="20.358"/>
 	
-		<polygon fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		<polygon fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 		16,5.499 5.043,26.501 26.957,26.501 	"/>
 </g>
 </svg>

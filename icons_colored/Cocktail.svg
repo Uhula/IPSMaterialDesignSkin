@@ -5,11 +5,11 @@
 	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 <g>
 	
-		<polygon fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		<polygon fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 		4.665,4.666 27.335,4.666 16,17.512 	"/>
 	
-		<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16" y1="18.266" x2="16" y2="25.822"/>
+		<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16" y1="18.266" x2="16" y2="25.822"/>
 	
-		<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.222" y1="27.334" x2="19.778" y2="27.334"/>
+		<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.222" y1="27.334" x2="19.778" y2="27.334"/>
 </g>
 </svg>

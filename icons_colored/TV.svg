@@ -5,12 +5,12 @@
 	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 <g>
 	
-		<rect x="5.118" y="6.411" fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="21.764" height="14.529"/>
+		<rect x="5.118" y="6.411" fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="21.764" height="14.529"/>
 	
-		<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.044" y1="20.956" x2="16.044" y2="24.161"/>
+		<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.044" y1="20.956" x2="16.044" y2="24.161"/>
 	
-		<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="7.575" y1="25.589" x2="16.059" y2="24.202"/>
+		<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="7.575" y1="25.589" x2="16.059" y2="24.202"/>
 	
-		<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.059" y1="24.202" x2="24.787" y2="25.589"/>
+		<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.059" y1="24.202" x2="24.787" y2="25.589"/>
 </g>
 </svg>

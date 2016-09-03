@@ -5,11 +5,11 @@
 	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 <g>
 	
-		<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="5.985" y1="7.985" x2="22.014" y2="24.015"/>
+		<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="5.985" y1="7.985" x2="22.014" y2="24.015"/>
 	
-		<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="22.016" y1="7.985" x2="5.986" y2="24.015"/>
+		<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="22.016" y1="7.985" x2="5.986" y2="24.015"/>
 </g>
-<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="26.014" y1="24.015" x2="26.014" y2="24.015"/>
-<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="26.014" y1="20.083" x2="26.014" y2="20.083"/>
-<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="26.014" y1="16.083" x2="26.014" y2="16.083"/>
+<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="26.014" y1="24.015" x2="26.014" y2="24.015"/>
+<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="26.014" y1="20.083" x2="26.014" y2="20.083"/>
+<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="26.014" y1="16.083" x2="26.014" y2="16.083"/>
 </svg>

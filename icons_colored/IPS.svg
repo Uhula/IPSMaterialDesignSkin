@@ -5,12 +5,12 @@
 	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 <g>
 	
-		<polyline fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		<polyline fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 		3.167,19.207 15.996,5.666 28.824,19.207 	"/>
 	
-		<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.869" y1="13.667" x2="8.869" y2="26.334"/>
+		<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.869" y1="13.667" x2="8.869" y2="26.334"/>
 	
-		<polyline fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		<polyline fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 		25.262,15.644 25.262,26.334 16.709,26.334 16.709,20.633 	"/>
 </g>
 </svg>

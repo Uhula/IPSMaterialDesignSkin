@@ -5,11 +5,11 @@
 	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 <g>
 	
-		<rect x="6.249" y="7.89" fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="19.068" height="12.73"/>
+		<rect x="6.249" y="7.89" fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="19.068" height="12.73"/>
 	
-		<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.999" y1="24.11" x2="29.001" y2="24.11"/>
+		<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.999" y1="24.11" x2="29.001" y2="24.11"/>
 	
-		<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="19.593" y1="12.108" x2="21.734" y2="12.108"/>
+		<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="19.593" y1="12.108" x2="21.734" y2="12.108"/>
 	<circle fill="#FFFFFF" cx="15.732" cy="12.108" r="1"/>
 </g>
 </svg>

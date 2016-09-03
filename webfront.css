@@ -3,14 +3,14 @@
   nicht bei URLs
 .icon { fill: #800000 !important; }
 */
-
+/*
 .link>.ipsIconPaintbrush {
   background-image: url('icons_colored/Paintbrush.svg');
 }
 .link>.ipsIconGraph {
   background-image: url('icons_colored/Graph.svg');
 }
-
+*/
 
 /* -------------------------
    Globale Einstellungen
@@ -37,34 +37,31 @@ body,
 /* Oberste Navigationszeile TOP */
 .ipsWebFront>.ipsContainer>.top>div>.navigation
 {
-  background: #E0E0E0/*bch*/;
+  background: #616161/*bca*/;
 }
 
 /* Statuszeile, wird an der height mit 34 px erkannt */
 .bottom[style*="height: 34px;"] .navigation
 {
-  box-shadow: 0 -3px 6px rgba(0,0,0,0.12), 0 -3px 6px rgba(0,0,0,0.24);
-  background: #E0E0E0/*bcn*/;
+  box-shadow: 0 0 2px rgba(255,255,255,0.24);
+  background: #616161/*bca*/;
 }
 
 /* Navigationszeilen  */
 .ipsTabPane>.navigation,
 .ipsContentChanger >.navigation 
 {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.24);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12)/*sca1*/, 0 3px 6px rgba(0,0,0,0.24)/*sca2*/;
   background-image: none;
   border-color: transparent;
-  background: #EEEEEE/*bcn*/;
+  background: #757575/*bcn*/;
 }
-   
-
-
 
 /* Navigation Textfarbe */
 .ipsTabPane>.navigation,
 .ipsContentChanger>.navigation 
 {
-  color: #000000/*fcn*/;
+  color: #FFFFFF/*fcn*/;
 }
 
 /* Aktives Element in Bars */
@@ -72,11 +69,11 @@ body,
 /* wenn aktives Element = 1.Child, dann auch */
 .ipsTabPane>.navigation>.scroll>.buttons.subHidden>div.active:first-child 
 {
-  border-color: #388E3C/*ac*/;
-  font-weight: bold;
-  color: #000000/*fcn*/;
+  border-color: #64B5F6/*ac*/;
+  font-weight: normal;
+  color: #FFFFFF/*fcn*/;
+  opacity:1.0;
 }
-
 
 /* Buttons in Nav */
 .ipsTabPane>.navigation>.scroll>.buttons>div,
@@ -85,7 +82,7 @@ body,
 {
   font-size: 1.1em;
   line-height: 1.8em;
-  opacity : 1.0;
+  opacity : 0.74;
   border-style: solid;
   border-width: 0 0 4px 0;
   border-color: transparent;
@@ -93,14 +90,6 @@ body,
 }
 
 
-.navigation>.scroll>.buttons>div
-{ 
-  opacity: 0.84;
-}
-.navigation>.scroll>.buttons>.active
-{ 
-  opacity: 1.00; 
-}
 
 
 /* --------------------------
@@ -109,43 +98,60 @@ body,
 /* Uhr etwas größer */
 .ipsClockWidget>.title 
 {
-  font-size: 1.6em;
-  color: #000000/*fcn*/;
+  font-size: 1.5em;
 }
 
 /* --------------------------
    Container
    -------------------------- */
-
-.ipsCategory>.container {
+.ipsCategory>.container  {
   border-color: transparent;
-  border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+  background-image: none;
+  background: transparent;
 }
 
-.ipsCategory>.container ,
-.ipsDialog>div 
-{
-  background-image: none;
+/* 
+  hb = hide border
+  sb = show border 
+*/
+/*sb*/._disabled/*/sb*/ .ipsCategory>.container  {
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12)/*scc1*/, 0 1px 3px rgba(0,0,0,0.24)/*scc2*/;
   background: #FFFFFF/*bcc*/;
 }
 
-/* Container-Border */    
-.ipsSplitPane.border > .top,
-.ipsSplitPane.border > .left {
+/*hb*//*/hb*/ .left {
+  box-shadow: 1px 0 1px rgba(0,0,0,0.12)/*scc1*/;
+}
+
+/*hb*//*/hb*/ .top  {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12)/*scc1*/;
+}
+
+.ipsSplitPane.border >.top,
+.ipsSplitPane.border >.left {
   border-color: transparent;
 }
 
-/* Child Container */
 .ipsCategory>.container .childContainers>div {
   border-color: transparent;
   margin: 4px 0;
 }
+   
+
 
 /* --------------------------
    Werte
    -------------------------- */
 
+.ipsCategory>.container .content .visual>.enum>div, 
+   
+   
+ /* Label */
+.ipsCategory>.container .content .title {
+  color: rgba(0,0,0,0.74)/*fcl*/;
+}
+ 
 /* Werte und Texte  */       
 .ipsCategory>.container .extended>.textBox>div,
 .ipsCategory>.container .extended>.textBox>textarea,
@@ -155,32 +161,46 @@ body,
 .ipsCategory>.container .content .visual>.selector>div,
 .ipsCategory>.container .extended>.textBox>div 
 {
-  color: #212121/*fcl*/;
-  font-weight: bold;
-  font-size: 1.1em;
+  color: #000000/*fcv*/;
   background-color: transparent;
   border-color: transparent;
+  font-weight: normal;
+  font-size: 1.0em;
 }
 
 /* Nicht selektierte Elemente */
 .ipsCategory>.container .content .visual>.enum>div,
 .ipsCategory>.container .content .visual>.selector>div,
 .ipsCategory>.container .extended>.textBox>div {
+  background-image: none;
   font-weight: normal;
   font-size: 1.0em;
-  color: #388E3C/*ac*/; 
-  background-image: none;
+  color: #000000/*fcv*/; 
+  margin: -3px 0px -3px 0px;
+  border-radius: 16px;
 }
 
 /* Werte, selektiert */
 .ipsCategory>.container .content .visual>.enum>.selected,
 .ipsCategory>.container .content .visual>.selector>.selected 
  {
-  font-weight: bold;
-  font-size: 1.1em;
-  color: #388E3C/*ac*/; 
   background-color: transparent;
   background-image: none;
+  font-weight: normal;
+  font-size: 1.0em;
+  color: #FFFFFF/*fcn*/;
+  background: #64B5F6/*ac*/;
+  border-radius:16px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.12)/*scc1*/, 0 1px 2px rgba(0,0,0,0.24)/*scc2*/;
+}
+
+/* Rahmen*/
+.ipsCategory>.container .content .visual>.enum, 
+.ipsCategory>.container .content .visual>.selector {
+  padding: 0;
+  border-radius: 16px;
+  /*background: rgba(0,0,0,0.12);*/
+  border: 1px solid rgba(0,0,0,0.12)/*scc1*/;
 }
 
 /* --------------------------
@@ -189,8 +209,8 @@ body,
 .ipsDialog.ipsEditorDialog>div>.content>ol>li>input[type=text], 
 .ipsDialog.ipsEditorDialog>div>.content>ol>li>select, 
 .ipsDialog.ipsEditorDialog>div>.content>select {
-  background: #FFFFFF/*bc*/;
-  border: 1px solid #388E3C/*ac*/;
+  background: #FFFFFF/*bcc*/;
+  border: 1px solid #64B5F6/*ac*/;
   color: #000000/*fc*/;
 }
 
@@ -203,34 +223,31 @@ body,
   background-image: none;
   top:12px;
   height:5px;
-  background: #388E3C/*ac*/; 
-  opacity: 0.33;
+  background: rgba(0,0,0,0.1)/**/;
 }
 /* Slider Bar */
 .ipsCategory>.container .content .visual>.slider>div>.bar {
   background-image: none;
   top:0px;
   height:28px;
-  background: #388E3C/*ac*/; 
-  background: linear-gradient(transparent 40%, #388E3C/*ac*/ 40%, #388E3C/*ac*/ 60%, transparent 60%);  
+  background: linear-gradient(transparent 40%, #64B5F6/*ac*/ 40%, #64B5F6/*ac*/ 60%, transparent 60%);   
   border: none;
   opacity: 1.0;
 }
 /* Slider Anfasser */
 .ipsCategory>.container .content .visual>.slider>div>.bar:after{
   padding: 0px 10px 8px 10px;
-  background: #388E3C/*ac*/;
+  background: #64B5F6/*ac*/;
   border-radius: 16px;
-  color: #388E3C/*ac*/;
+  color: #64B5F6/*ac*/;
   content: '*';
+  box-shadow: 0 0 3px rgba(0,0,0,0.12)/*scc1*/, 0 1px 2px rgba(0,0,0,0.24)/*scc2*/;
 }
 /* Slider Text */
 .ipsCategory>.container .content .visual>.slider>div>.text {
-  color: #388E3C/*ac*/;
-  font-weight: bold;
-  font-size: 1.1em;
-  text-shadow: 0px 0px 4px #FFFFFF/*bc*/;
-  top: -1px;
+  color: #000000/*fcv*/;
+  font-weight: normal;
+  top: 8px;
 }
 
 .ipsCategory>.container .content .link>.keyboardLink,
@@ -240,27 +257,43 @@ body,
 .ipsCategory>.container .content .link>.colorLink {
 }
 
+/* --------------------------
+   Links und Buttons
+   -------------------------- */
+
+.link {
+  background:#64B5F6/*ac*/;
+  box-shadow: 0 0 3px rgba(0,0,0,0.12)/*scc1*/, 0 1px 2px rgba(0,0,0,0.24)/*scc2*/;
+  border-radius:2px;
+  height: 34px;
+  top: 2px;
+  display: block!important;
+}
+
+    
+
+
+.color>div {
+  box-shadow: 0 0 3px rgba(0,0,0,0.12)/*scc1*/, 0 1px 2px rgba(0,0,0,0.24)/*scc2*/;
+  border-radius:2px;
+}
+
 
 /* --------------------------
-   Chart
+   Hover
    -------------------------- */
-.ipsChart,
-.ipsChartDialog .content {
-  background-image: none;
-  background: #404040/*bcg*/; 
+.link:hover,
+.color>div:hover,
+.selected:hover,
+.ipsCategory>.container .content .visual>.slider>div>.bar:hover:after,
+.ipsCategory>.container .content .visual>.enum>.selected:hover,
+.ipsCategory>.container .content .visual>.selector>.selected:hover 
+ {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12)/*sca1*/, 0 3px 6px rgba(0,0,0,0.24)/*sca2*/;
+
 }
 
-.ipsChart {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
-}
 
-/* Chartdialoge groß */
-.ipsChartDialog>div {
-  bottom: 5% !important;
-  left: 3% !important;
-  right: 3% !important;
-  top: 5% !important;
-}
 
 
 
@@ -274,7 +307,7 @@ body,
 {
   font-size : 1.2em;
   font-weight: bold;
-  color: #808080/*fch*/;
+  color: rgba(0,0,0,0.5)/*fch*/;
 }
 
 /* Zwischenüberschriften */
@@ -282,7 +315,7 @@ body,
 {
   font-size : 1.1em;
   font-weight: bold;
-  color: #808080/*fch*/;
+  color: rgba(0,0,0,0.5)/*fch*/;
 }
 
 
@@ -323,20 +356,23 @@ iframe {
 
 
 
+/* --------------------------
+   Dialoge
+   -------------------------- */
 
-
-/* --- Dialoge */
-/* aussen */
+/* aussen - abdunkeln des Rests */
 .ipsDialog.modal {
   background-image: none;
-  background-color: rgba(0,0,0, 0.25);
+  background-color: rgba(0,0,0, 0.80);
 }
 
 /* innen */
 .ipsDialog>div {
-  background: #FAFAFA/*bc*/;
+  background-image: none;
+  background: #757575/*bcn*/;
   border-color: transparent;
-  box-shadow: 0 0 4px rgba(0,0,0,0.48), 0 14px 28px rgba(0,0,0,0.24), 0 10px 10px   rgba(0,0,0,0.48);
+  border-radius: 2px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25)/*scd1*/, 0 10px 10px rgba(0,0,0,0.22)/*scd2*/;
   bottom: 10%;
   left: 10%;
   right: 10%;
@@ -344,15 +380,16 @@ iframe {
   font-size: 17px;
 }
 
+
 .ipsDialog>div>.content {
-  right: 0px;
+  right: 0px!important;
+  background: #FAFAFA/*bc*/;
 }
 
 /* Dialogüberschrift */
 .ipsDialog>div>.title {
   font-size : 1.2em;
-  font-weight: bold;
-  color: #808080/*fch*/;
+  color: #FFFFFF/*fcn*/;
 }
 
 .ipsDialog>div>.titleLine {
@@ -369,6 +406,35 @@ iframe {
     background-image: none;
 }
 
+/* --------------------------
+   Chart
+   -------------------------- */
+.ipsChart,
+.ipsDialog.ipsChartDialog>div>.content {
+  background-image: none;
+  background: #757575/*bcg*/; 
+}
+
+/*sb*/._disabled/*/sb*/ .ipsChart {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12)/*scc1*/, 0 1px 3px rgba(0,0,0,0.24)/*scc2*/;
+}
+
+/* Chartdialoge groß */
+.ipsChartDialog>div {
+  bottom: 5% !important;
+  left: 3% !important;
+  right: 3% !important;
+  top: 5% !important;
+}
+
+
+/* --------------------------
+   Sonst
+   -------------------------- */
+img {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12)/*scc1*/, 0 1px 3px rgba(0,0,0,0.24)/*scc2*/;
+}
+   
 .ipsLogin {
     background-image: none;
 }
@@ -386,6 +452,39 @@ iframe {
 }
 
 
+.ipsLogin {
+    background-image: none;
+    background-color: transparent;
+}
+
+
+
+.ipsNotifications>.ipsNotification{
+  border-radius: 3px;
+  background-image: none;
+  background: #606060/*bcg*/;
+  border-color: transparent;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25)/*scd1*/, 0 10px 10px rgba(0,0,0,0.22)/*scd2*/;
+}
+
+.ipsNotifications>.ipsNotification>.message{
+  background: #606060/*bcg*/;
+  color: #FFFFFF/*fcn*/;
+}
+
+.ipsNotifications>.ipsNotification>.spacer {
+  height: 0px;
+}
+.ipsNotifications>.ipsNotification>.message.icon>div:first-child {
+  left: 88%;
+  top: 16px; 
+}
+
+.ipsNotifications>.ipsNotification>.message.icon>.content {
+  left: 0px;
+  width: 95%;
+  top: 16px;
+}
 /* ---------------------------------------------------------
    IPS Edit mode 
    --------------------------------------------------------- */
@@ -399,9 +498,12 @@ iframe {
   border-color: #0D47A1 !important;
 }
 
+.ipsDialog.ipsEditorSelectDialog>div>.content,
 .ipsDialog.ipsEditorDialog>div>.content {
   font-size: 15px;
   right: 0px;
+  background: #2196F3;
+  color: #FFFFFF;
 }
 
 .new,
@@ -425,7 +527,7 @@ iframe {
 .ipsDialog.ipsEditorDialog>div>.content>ol>li>select>option, 
 .ipsDialog.ipsEditorDialog>div>.content>select>option
 {
-  background-color: #FFFFFF;
+  background-color: #FAFAFA/*bc*/;
 }
 
 .save.icon,
@@ -435,7 +537,7 @@ iframe {
 .new.icon,
 .new-text.iconExtraSmall
 {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 0 4px rgba(0,0,0,0.48)/*scd1*/, 0 14px 28px rgba(0,0,0,0.24)/*scd2*/;
   border-radius: 50%;  
   padding: 2px 4px 2px 0px;
   border-width: 0px !important;
@@ -459,7 +561,8 @@ iframe {
 .new.icon:hover,
 .new-text.iconExtraSmall:hover
 {
-  box-shadow: 0 0 4px rgba(0,0,0,0.48), 0 14px 28px rgba(0,0,0,0.24), 0 10px 10px   rgba(0,0,0,0.48);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.48)/*scd1*/, 0 10px 10px rgba(0,0,0,0.24)/*scd2*/;
+  transition: all 0.2s ease-in-out;
 }
 
 

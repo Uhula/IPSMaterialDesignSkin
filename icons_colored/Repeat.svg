@@ -5,10 +5,10 @@
 	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 <g>
 	
-		<polygon fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		<polygon fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 		3.847,16.888 14.916,16.888 3.847,27.404 	"/>
 	
-		<path fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		<path fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 		M10.573,7.052c1.857-1.533,4.24-2.456,6.838-2.456c5.933,0,10.742,4.81,10.742,10.742c0,5.934-4.81,10.744-10.742,10.744
 		c-3.773,0-6.837-1.953-7.813-3.906"/>
 </g>

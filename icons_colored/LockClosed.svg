@@ -5,8 +5,8 @@
 	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 <g>
 	
-		<rect x="7.333" y="14" fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="3" width="17.334" height="14.002"/>
-	<path fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="3" d="
+		<rect x="7.333" y="14" fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="3" width="17.334" height="14.002"/>
+	<path fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="3" d="
 		M11.333,14c0,0-0.359-10.001,4.666-10.001C21.026,3.999,20.667,14,20.667,14"/>
 </g>
 </svg>

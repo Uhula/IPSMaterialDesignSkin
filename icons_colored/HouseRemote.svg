@@ -6,15 +6,15 @@
 <g>
 	<g>
 		
-			<line fill="none" stroke="#FFFFFF" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="21.582" y1="12.393" x2="21.582" y2="6.659"/>
+			<line fill="none" stroke="#7986CB" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="21.582" y1="12.393" x2="21.582" y2="6.659"/>
 		<g>
 			
-				<polyline fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				<polyline fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 				4.387,18.402 15.986,6.868 27.611,18.402 			"/>
 			
-				<line fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="7.904" y1="15.232" x2="7.904" y2="26.145"/>
+				<line fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="7.904" y1="15.232" x2="7.904" y2="26.145"/>
 			
-				<polyline fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				<polyline fill="none" stroke="#7986CB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 				23.986,15.232 23.986,26.145 15.998,26.145 15.998,21.1 			"/>
 		</g>
 		<circle fill="#FFFFFF" cx="21.577" cy="5.226" r="1.616"/>
