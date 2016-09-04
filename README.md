@@ -48,31 +48,6 @@ Die Gesamtgröße beträgt, bedingt durch die SVG Icons, rund 2.0 MB.
 Verwendung auf eigene Gefahr, der Autor übernimmt weder Gewähr noch Haftung.
 
 ### 4. Anleitung
-#### Welche Anpassungen sind in der CSS vorhanden ?
-Um den Material Design Style zu erhalten, werden in der CSS Datei folgenden Einstellungen
-zum originalen Skin vorgenommen: 
-* alle Border werden durch "transparent" unsichtbar geschaltet
-* alle Hintergründe werden flach, also ohne Verlauf dargestellt
-* Kopfzeile
-  * Die erste Menüzeile wird als Kopfzeile angesehen und in dunklerer
-    Themenfarbe dargestellt als die folgenden Menüs. Es empfiehlt sich hier nur
-    Schaltflächen und InfoWidgets unter zu bringen    
-  * erhält einen Schatten nach unten  
-* Navigation
-  * wird mit der Themenfarbe hinterlegt
-  * die aktive Navigation wird in einer Akzentfarbe markiert
-  * erhält einen Schatten nach unten  
-* Datenanzeiger, Container
-  * werden mit einem Schatten dargestellt
-  * Wertdarstellungen sind fett und leicht größer
-  * Schaltflächen werden als Text in der Akzentfarbe angezeigt
-  * Slider werden als Strich dargestellt und erhalten einen "Anfasser"
-* Statuszeile
-  * Die letzte Menüzeile (SplitPane:bottom) wird als Statuszeile angesehen und in dunklerer
-    Themenfarbe wie die Kopfzeile dargestellt. Sie wird an der fixen Höhe von 34px erkannt!   
-  * erhält einen Schatten nach oben
-* Popups füllen zentriert 10% des Fensters, Ausnahme: Charts
-* ...
 
 #### Welche Anpasssungen sollten in IP Symcon vorgenommen werden ?
 * um die Darstellung der Werte und Schaltflächen sinnvoll nutzen zu können,
@@ -103,6 +78,32 @@ werden, wo sie notwendig sind. Z.B. bei Alarm- und Fehlerzuständen.
 Kann man zwar manuell machen, muss man aber nicht, da es hierfür ein weiteres Modul
 gibt `git://github.com/Uhula/IPSMaterialDesignSkinOptions.git`
 
+#### Welche Anpassungen sind in der CSS vorhanden ?
+Um den Material Design Style zu erhalten, werden in der CSS Datei folgenden Einstellungen
+zum originalen Skin vorgenommen: 
+* alle Border werden durch "transparent" unsichtbar geschaltet
+* alle Hintergründe werden flach, also ohne Verlauf dargestellt
+* Kopfzeile
+  * Die erste Menüzeile wird als Kopfzeile angesehen und in dunklerer
+    Themenfarbe dargestellt als die folgenden Menüs. Es empfiehlt sich hier nur
+    Schaltflächen und InfoWidgets unter zu bringen    
+  * erhält einen Schatten nach unten  
+* Navigation
+  * wird mit der Themenfarbe hinterlegt
+  * die aktive Navigation wird in einer Akzentfarbe markiert
+  * erhält einen Schatten nach unten  
+* Datenanzeiger, Container
+  * werden mit einem Schatten dargestellt
+  * Wertdarstellungen sind fett und leicht größer
+  * Schaltflächen werden als Text in der Akzentfarbe angezeigt
+  * Slider werden als Strich dargestellt und erhalten einen "Anfasser"
+* Statuszeile
+  * Die letzte Menüzeile (SplitPane:bottom) wird als Statuszeile angesehen und in dunklerer
+    Themenfarbe wie die Kopfzeile dargestellt. Sie wird an der fixen Höhe von 34px erkannt!   
+  * erhält einen Schatten nach oben
+* Popups füllen zentriert 10% des Fensters, Ausnahme: Charts
+* Webfront-Edit-Mode: Buttons usw. mit Schatten
+
 
 ### 5. Changelog
 Siehe [:link:ChangeLog](./CHANGELOG.md).
@@ -120,7 +121,8 @@ Also, die WebFront so verwenden, wie sie gedacht sind: Statische Aufteilung des 
 #### Wünsche an IP Symcon
 Viele Wünsche gibt es nicht, jedoch würde es die CSS Möglichkeiten deutlich erweitern,
 wenn jede Instance zusätzlich eine Property "CSS classes" hätte, die man frei eingeben kann und die
-dann mit in <div class="... myclasses ..."> gerendert wird  
+dann mit in <div class="... myclasses ..."> gerendert wird. Z.B. könnte man dann die Popups über CSS mit 
+unterschiedlichen Größen "aufpoppen" lassen ...   
 
 
 :copyright:2016ff Uhula
