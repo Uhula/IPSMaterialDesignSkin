@@ -76,7 +76,7 @@ werden, wo sie notwendig sind. Z.B. bei Alarm- und Fehlerzuständen.
 
 #### Wie kann man die Farbeinstellungen in der CSS anpassen ?
 Kann man zwar manuell machen, muss man aber nicht, da es hierfür ein weiteres Modul
-gibt `git://github.com/Uhula/IPSMaterialDesignSkinOptions.git`
+gibt [IPS MaterialDesignSkinOptions](https://github.com/Uhula/IPSMaterialDesignSkinOptions)
 
 #### Welche Anpassungen sind in der CSS vorhanden ?
 Um den Material Design Style zu erhalten, werden in der CSS Datei folgenden Einstellungen
@@ -121,7 +121,7 @@ Also, die WebFront so verwenden, wie sie gedacht sind: Statische Aufteilung des 
 #### Wünsche an IP Symcon
 Viele Wünsche gibt es nicht, jedoch würde es die CSS Möglichkeiten deutlich erweitern,
 wenn jede Instance zusätzlich eine Property "CSS classes" hätte, die man frei eingeben kann und die
-dann mit in <div class="... myclasses ..."> gerendert wird. Z.B. könnte man dann die Popups über CSS mit 
+dann mit in (div class="... myclasses ...") gerendert wird. Z.B. könnte man dann die Popups über CSS mit 
 unterschiedlichen Größen "aufpoppen" lassen ...   
 
 
