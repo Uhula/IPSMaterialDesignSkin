@@ -121,7 +121,11 @@ Also, die WebFront so verwenden, wie sie gedacht sind: Statische Aufteilung des 
 #### Wünsche an IP Symcon
 Viele Wünsche gibt es nicht, jedoch würde es die CSS Möglichkeiten deutlich erweitern,
 wenn jede Instance zusätzlich eine Property "CSS classes" hätte, die man frei eingeben kann und die
+<<<<<<< HEAD
 dann mit in (div class="... myclasses ...") gerendert wird. Z.B. könnte man dann die Popups über CSS mit
+=======
+dann mit in (div class="... myclasses ...") gerendert wird. Z.B. könnte man dann die Popups über CSS mit 
+>>>>>>> origin/master
 unterschiedlichen Größen "aufpoppen" lassen ...   
 
 
