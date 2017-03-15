@@ -18,8 +18,8 @@
 
 body,
 .ipsTabPane>.navigation  {
-  font-family: Arial,sans-serif;
-  color: rgba(0,0,0,0.9)/*fcl*/;
+  font-family: /*font*/Roboto/*/font*/;
+  color: rgba(0,0,0,0.54)/*fcl*/;
 }
 
 .ipsWebFront,
@@ -33,7 +33,7 @@ body,
 /* --------------------------
    Navigation
    -------------------------- */
-   
+
 /* Oberste Navigationszeile TOP */
 .ipsWebFront>.ipsContainer>.top>div>.navigation
 {
@@ -49,7 +49,7 @@ body,
 
 /* Navigationszeilen  */
 .ipsTabPane>.navigation,
-.ipsContentChanger >.navigation 
+.ipsContentChanger >.navigation
 {
   box-shadow: 0 3px 6px rgba(0,0,0,0.12)/*sca1*/, 0 3px 6px rgba(0,0,0,0.24)/*sca2*/;
   background-image: none;
@@ -59,26 +59,16 @@ body,
 
 /* Navigation Textfarbe */
 .ipsTabPane>.navigation,
-.ipsContentChanger>.navigation 
+.ipsContentChanger>.navigation
 {
   color: #FFFFFF/*fcn*/;
 }
 
-/* Aktives Element in Bars */
-.ipsTabPane>.navigation>.scroll>.buttons>div.active,
-/* wenn aktives Element = 1.Child, dann auch */
-.ipsTabPane>.navigation>.scroll>.buttons.subHidden>div.active:first-child 
-{
-  border-color: #64B5F6/*ac*/;
-  font-weight: normal;
-  color: #FFFFFF/*fcn*/;
-  opacity:1.0;
-}
 
 /* Buttons in Nav */
 .ipsTabPane>.navigation>.scroll>.buttons>div,
 /* wenn aktives Element = 1.Child, dann auch */
-.ipsTabPane>.navigation>.scroll>.buttons.subHidden>div:first-child 
+.ipsTabPane>.navigation>.scroll>.buttons.subHidden>div:first-child
 {
   font-size: 1.1em;
   line-height: 1.8em;
@@ -89,6 +79,17 @@ body,
   padding: 0 8px;
 }
 
+/* Aktives Element in Bars */
+.ipsTabPane>.navigation>.scroll>.buttons>div.active,
+/* wenn aktives Element = 1.Child, dann auch */
+.ipsTabPane>.navigation>.scroll>.buttons.subHidden>div.active:first-child
+{
+  border-color: #64B5F6/*ac*/;
+  font-weight: bold;
+  color: #FFFFFF/*fcn*/;
+  opacity:1.0;
+}
+
 
 
 
@@ -96,7 +97,7 @@ body,
    Info Widgets
    -------------------------- */
 /* Uhr etwas größer */
-.ipsClockWidget>.title 
+.ipsClockWidget>.title
 {
   font-size: 1.5em;
 }
@@ -110,21 +111,21 @@ body,
   background: transparent;
 }
 
-/* 
+/*
   hb = hide border
-  sb = show border 
+  sb = show border
 */
-/*sb*/._disabled/*/sb*/ .ipsCategory>.container  {
+/*sb*//*/sb*/ .ipsCategory>.container  {
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.12)/*scc1*/, 0 1px 3px rgba(0,0,0,0.24)/*scc2*/;
   background: #FFFFFF/*bcc*/;
 }
 
-/*hb*//*/hb*/ .left {
+/*hb*/._disabled/*/hb*/ .left {
   box-shadow: 1px 0 1px rgba(0,0,0,0.12)/*scc1*/;
 }
 
-/*hb*//*/hb*/ .top  {
+/*hb*/._disabled/*/hb*/ .top  {
   box-shadow: 0 1px 1px rgba(0,0,0,0.12)/*scc1*/;
 }
 
@@ -137,28 +138,25 @@ body,
   border-color: transparent;
   margin: 4px 0;
 }
-   
+
 
 /* --------------------------
    Werte
    -------------------------- */
 
-.ipsCategory>.container .content .visual>.enum>div, 
-   
-   
  /* Label */
 .ipsCategory>.container .content .title {
-  color: rgba(0,0,0,0.74)/*fcl*/;
+  color: rgba(0,0,0,0.54)/*fcl*/;
 }
- 
-/* Werte und Texte  */       
+
+/* Werte und Texte  */
 .ipsCategory>.container .extended>.textBox>div,
 .ipsCategory>.container .extended>.textBox>textarea,
 .ipsCategory>.container .content .visual>.text>input[type=text],
-.ipsCategory>.container .content .visual>.text, 
-.ipsCategory>.container .content .visual>.enum>div, 
+.ipsCategory>.container .content .visual>.text,
+.ipsCategory>.container .content .visual>.enum>div,
 .ipsCategory>.container .content .visual>.selector>div,
-.ipsCategory>.container .extended>.textBox>div 
+.ipsCategory>.container .extended>.textBox>div
 {
   color: #000000/*fcv*/;
   background-color: transparent;
@@ -167,46 +165,179 @@ body,
   font-size: 1.0em;
 }
 
-/* Nicht selektierte Elemente */
+/* Werte */
+.ipsCategory>.container .content .visual>.text{
+  font-weight: normal;
+}
+
+/* Rahmen */
+.ipsCategory>.container .content .visual>.enum,
+.ipsCategory>.container .content .visual>.selector {
+  padding: 0px;
+  margin-right: 0px;
+}
+
+.ipsCategory>.container .content .visual>.enum:before,
+.ipsCategory>.container .content .visual>.selector:before {
+  background: none;
+  border-radius: 16px;
+  content: '';
+  top: 4px;
+  right: 1px;
+  left: 2px;
+  height: 24px;
+  position: absolute;
+  box-shadow: inset 0 1px 1px #64B5F6/*ac*/, 0 1px 1px #64B5F6/*ac*/;
+  opacity:0.74;
+}
+
+/* Rahmen - hover */
+.ipsCategory>.container .content .visual>.enum:hover:before,
+.ipsCategory>.container .content .visual>.selector:hover:before {
+  opacity: 1.00;
+}
+
+/* alle Elemente */
 .ipsCategory>.container .content .visual>.enum>div,
 .ipsCategory>.container .content .visual>.selector>div,
 .ipsCategory>.container .extended>.textBox>div {
-  background-image: none;
   font-weight: normal;
   font-size: 1.0em;
-  color: #000000/*fcv*/; 
-  margin: -3px 0px -3px 0px;
+  margin: 1px 0px 2px 2px;
+  padding: 0px 0.5em 0px 0.5em;
   border-radius: 16px;
+  color: #000000/*fcv*/;
+  background: none;
+  box-shadow: none;
+  border-width: 0px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  opacity: 0.74;
+}
+/* ... link Platz freihalten */
+.ipsContainer>.content>[class*='link.show=true'].icon ~ .visual>.enum,
+.ipsContainer>.content>[class*='link.show=true'].icon ~ .visual>.selectorv,
+.ipsContainer>.content>[class*='link.show=true'].icon ~ .visual>.text {
+  right: 36px;
+}
+/* feste Width */
+.ipsContainer>.content>[class*='ele.width=32px'].icon ~ .visual>.enum>div,
+.ipsContainer>.content>[class*='ele.width=32px'].icon ~ .visual>.selector>div{
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
 }
 
-/* Werte, selektiert */
+.ipsContainer>.content>[class*='ele.width=48px'].icon ~ .visual>.enum>div,
+.ipsContainer>.content>[class*='ele.width=48px'].icon ~ .visual>.selector>div{
+  min-width: 48px;
+  width: 48px;
+}
+
+.ipsContainer>.content>[class*='ele.width=64px'].icon ~ .visual>.enum>div,
+.ipsContainer>.content>[class*='ele.width=64px'].icon ~ .visual>.selector>div{
+  min-width: 64px;
+  width: 64px;
+}
+
+.ipsContainer>.content>[class*='ele.width=80px'].icon ~ .visual>.enum>div,
+.ipsContainer>.content>[class*='ele.width=80px'].icon ~ .visual>.selector>div{
+  min-width: 80px;
+  width: 80px;
+}
+
+.ipsContainer>.content>[class*='ele.width=96px'].icon ~ .visual>.enum>div,
+.ipsContainer>.content>[class*='ele.width=96px'].icon ~ .visual>.selector>div{
+  min-width: 96px;
+  width: 96px;
+}
+
+/* enum - Werte, selected before */
+.ipsCategory>.container .content .visual>.enum>.selected:before,
+.ipsCategory>.container .content .visual>.selector>.selected:before {
+  background: #64B5F6/*ac*/;
+  border-radius: 16px;
+  content: '';
+  height: 30px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  box-shadow: none;
+  z-index: -1;
+}
+
+/* selected */
 .ipsCategory>.container .content .visual>.enum>.selected,
-.ipsCategory>.container .content .visual>.selector>.selected 
- {
+.ipsCategory>.container .content .visual>.selector>.selected {
+  background: none;
+  color: #FFFFFF/*fcn*/;
   background-color: transparent;
-  background-image: none;
-  font-weight: normal;
-  font-size: 1.0em;
+  opacity: 1.0;
+
+}
+
+/* enum - hover */
+.ipsCategory>.container .content .visual>.selector>div:hover,
+.ipsCategory>.container .content .visual>.enum>div:hover{
   color: #FFFFFF/*fcn*/;
   background: #64B5F6/*ac*/;
-  border-radius:16px;
-  box-shadow: 0 0 3px rgba(0,0,0,0.12)/*scc1*/, 0 1px 2px rgba(0,0,0,0.24)/*scc2*/;
+  opacity: 0.74;
+  border-radius: 16px;
+  opacity: 1.0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12)/*sca1*/, 0 3px 6px rgba(0,0,0,0.24)/*sca2*/;
 }
 
-/* Rahmen*/
-.ipsCategory>.container .content .visual>.enum, 
-.ipsCategory>.container .content .visual>.selector {
-  padding: 0;
-  border-radius: 16px;
-  /*background: rgba(0,0,0,0.12);*/
-  border: 1px solid rgba(0,0,0,0.12)/*scc1*/;
+/* Selector */
+.ipsCategory>.container .content .visual>.selector>div{
 }
+
+/* "<" und ">" ohne border-bottom */
+.ipsCategory>.container .content .visual>.selector>div:nth-child(2),
+.ipsCategory>.container .content .visual>.selector>div:last-child{
+}
+
+/* Selector - Werte, selektiert */
+.ipsCategory>.container .content .visual>.selector>.selected {
+}
+
+/* Sonderfall: enum hat nur genau einen Wert, dann als Button darstellen
+               enum soll als Btn dargestellt werden  */
+.ipsContainer>.content>[class*='ele.style=btn'].icon ~ .visual>.enum::before,
+.ipsContainer>.content>[class*='ele.style=btn'].icon ~ .visual>.selector::before{
+  opacity: 0.0;
+}
+
+.ipsCategory > .container .content .visual > .enum > div:nth-child(2):last-child.selected,
+.ipsContainer>.content>[class*='ele.style=btn'].icon ~ .visual>.enum>div,
+.ipsContainer>.content>[class*='ele.style=btn'].icon ~ .visual>.selector>div{
+  background: #64B5F6/*ac*/;
+  border-radius: 2px;
+  color: #FFFFFF/*fcn*/;
+  height:30px;
+  opacity: 1.0;
+}
+
+.ipsCategory > .container .content .visual > .enum > div:nth-child(2):last-child.selected:hover,
+.ipsContainer>.content>[class*='ele.style=btn'].icon ~ .visual>.enum>div:hover,
+.ipsContainer>.content>[class*='ele.style=btn'].icon ~ .visual>.selector>div:hover{
+  border-radius: 2px;
+}
+
+.ipsCategory > .container .content .visual > .enum > div:nth-child(2):last-child.selected::before,
+.ipsContainer>.content>[class*='ele.style=btn'].icon ~ .visual>.enum>div:hover,
+.ipsContainer>.content>[class*='ele.style=btn'].icon ~ .visual>.selector>div:hover{
+  border-radius: 2px;
+
+}
+
+
 
 /* --------------------------
    Eingabefelder
    -------------------------- */
-.ipsDialog.ipsEditorDialog>div>.content>ol>li>input[type=text], 
-.ipsDialog.ipsEditorDialog>div>.content>ol>li>select, 
+.ipsDialog.ipsEditorDialog>div>.content>ol>li>input[type=text],
+.ipsDialog.ipsEditorDialog>div>.content>ol>li>select,
 .ipsDialog.ipsEditorDialog>div>.content>select {
   background: #FFFFFF/*bcc*/;
   border: 1px solid #64B5F6/*ac*/;
@@ -220,33 +351,79 @@ body,
 /* Slider Background */
 .ipsCategory>.container .content .visual>.slider>div>.background  {
   background-image: none;
-  top:12px;
-  height:5px;
-  background: rgba(0,0,0,0.1)/**/;
+  top:11px;
+  height:4px;
+  background: rgba(0,0,0,0.12)/*scc1*/;
 }
 /* Slider Bar */
 .ipsCategory>.container .content .visual>.slider>div>.bar {
   background-image: none;
   top:0px;
-  height:28px;
-  background: linear-gradient(transparent 40%, #64B5F6/*ac*/ 40%, #64B5F6/*ac*/ 60%, transparent 60%);   
+  height:26px;
+  background: linear-gradient(transparent 40%, #64B5F6/*ac*/ 40%, #64B5F6/*ac*/ 60%, transparent 60%);
   border: none;
   opacity: 1.0;
 }
+
+.ipsContainer>.content>[class*='slider.color=red'].icon ~ .visual>.slider>div>.bar{
+  background: linear-gradient(transparent 40%, red 40%, red 60%, transparent 60%);
+}
+.ipsContainer>.content>[class*='slider.color=green'].icon ~ .visual>.slider>div>.bar{
+  background: linear-gradient(transparent 40%, green 40%, green 60%, transparent 60%);
+}
+.ipsContainer>.content>[class*='slider.color=blue'].icon ~ .visual>.slider>div>.bar{
+  background: linear-gradient(transparent 40%, blue 40%, blue 60%, transparent 60%);
+}
+.ipsContainer>.content>[class*='slider.color=yellow'].icon ~ .visual>.slider>div>.bar{
+  background: linear-gradient(transparent 40%, yellow 40%, yellow 60%, transparent 60%);
+}
+.ipsContainer>.content>[class*='slider.color=white'].icon ~ .visual>.slider>div>.bar{
+  background: linear-gradient(transparent 40%, #F0F0F0 40%, #F0F0F0 60%, transparent 60%);
+}
+
+
 /* Slider Anfasser */
 .ipsCategory>.container .content .visual>.slider>div>.bar:after{
-  padding: 0px 10px 8px 10px;
   background: #64B5F6/*ac*/;
-  border-radius: 16px;
+  border-radius: 50%;
   color: #64B5F6/*ac*/;
-  content: '*';
+  content: '';
+  width:24px;
+  height: 24px;
+  right: 0px;
+  position: absolute;
   box-shadow: 0 0 3px rgba(0,0,0,0.12)/*scc1*/, 0 1px 2px rgba(0,0,0,0.24)/*scc2*/;
 }
+
+.ipsCategory>.container .content .visual>.slider>div>.bar:hover:after {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12)/*sca1*/, 0 3px 6px rgba(0,0,0,0.24)/*sca2*/;
+}
+
+.ipsContainer>.content>[class*='slider.color=red'].icon ~ .visual>.slider>div>.bar:after{
+  background: red;
+  color: red;
+}
+.ipsContainer>.content>[class*='slider.color=green'].icon ~ .visual>.slider>div>.bar:after{
+  background: green;
+  color: green;
+}
+.ipsContainer>.content>[class*='slider.color=blue'].icon ~ .visual>.slider>div>.bar:after{
+  background: blue;
+  color: blue;
+}
+.ipsContainer>.content>[class*='slider.color=yellow'].icon ~ .visual>.slider>div>.bar:after{
+  background: yellow;
+  color: yellow;
+}
+.ipsContainer>.content>[class*='slider.color=white'].icon ~ .visual>.slider>div>.bar:after{
+  background: #F0F0F0;
+  color: #F0F0F0;
+}
+
 /* Slider Text */
 .ipsCategory>.container .content .visual>.slider>div>.text {
   color: #000000/*fcv*/;
-  font-weight: normal;
-  top: 8px;
+  top: 4px;
 }
 
 .ipsCategory>.container .content .link>.keyboardLink,
@@ -261,31 +438,19 @@ body,
    -------------------------- */
 .link {
   background:#64B5F6/*ac*/;
-  box-shadow: 0 0 3px rgba(0,0,0,0.12)/*scc1*/, 0 1px 2px rgba(0,0,0,0.24)/*scc2*/;
   border-radius:2px;
   height: 34px;
-  top: 2px;
+  margin:1px 0px 1px 0px;
   display: block!important;
 }
 
 .color>div {
-  box-shadow: 0 0 3px rgba(0,0,0,0.12)/*scc1*/, 0 1px 2px rgba(0,0,0,0.24)/*scc2*/;
   border-radius:2px;
 }
 
-
-/* --------------------------
-   Hover
-   -------------------------- */
 .link:hover,
-.color>div:hover,
-.selected:hover,
-.ipsCategory>.container .content .visual>.slider>div>.bar:hover:after,
-.ipsCategory>.container .content .visual>.enum>.selected:hover,
-.ipsCategory>.container .content .visual>.selector>.selected:hover 
- {
+.color>div:hover{
   box-shadow: 0 3px 6px rgba(0,0,0,0.12)/*sca1*/, 0 3px 6px rgba(0,0,0,0.24)/*sca2*/;
-
 }
 
 
@@ -297,6 +462,21 @@ body,
    ipsContainer container nestedUneven ipsVariable
    -------------------------- */
 
+.ipsContainer>.content>[class*='title.width=32px'].icon + .title{
+  min-width:32px;
+  width:32px;
+}
+
+.ipsContainer>.content>[class*='title.width=64px'].icon + .title{
+  min-width:64px;
+  width:64px;
+}
+
+.ipsContainer>.content>[class*='title.width=128px'].icon + .title{
+  min-width:128px;
+  width:128px;
+}
+
 /* Container Überschriften */
 .ipsCategory>.ipsContainer>.content>.title
 {
@@ -306,14 +486,68 @@ body,
 }
 
 /* Zwischenüberschriften */
-.ipsContainer>.content>.ipsIconMinus + .title
+.ipsContainer>.content>[class*='title.color=accent'].icon + .title
 {
-  font-size : 1.1em;
+  font-size : 0.9em;
   font-weight: bold;
   color: rgba(0,0,0,0.5)/*fch*/;
 }
 
 
+/* --------------------------
+   Icons
+   -------------------------- */
+.ipsCategory > .container .content [class*='='].icon {
+  min-width: 0px;
+}
+
+/* ----------------------------
+   Werteeingabe Kreis
+   ---------------------------- */
+.ipsDialog.ipsCirclesliderDialog .backgroundStripesCircle {
+fill: none;
+stroke: rgba(0,0,0,0.12)/*scc1*/;
+stroke-width: 4px;
+}
+
+.ipsDialog.ipsCirclesliderDialog .backgroundCircle {
+fill: none;
+stroke: rgba(0,0,0,0.12)/*scc1*/;
+stroke-width: 4px;
+}
+
+.ipsDialog.ipsCirclesliderDialog .progressBar {
+fill: none;
+stroke: #64B5F6/*ac*/;
+stroke-width: 8px;
+stroke-linecap:"round";
+}
+
+.ipsDialog.ipsCirclesliderDialog .sliderHandle {
+    fill: #64B5F6/*ac*/;
+    stroke: #64B5F6/*ac*/;
+    filter: drop-shadow( -5px -5px 5px #000 );
+}
+
+.ipsDialog.ipsCirclesliderDialog svg text {
+    font-size: 1.5em;
+    text-align: center;
+    fill: #64B5F6/*ac*/;
+}
+
+.ipsDialog.ipsCirclesliderDialog .preselectLabel {
+   margin-top: 4%;
+   margin-bottom: 4%;
+   padding-top: 4%;
+   padding-bottom: 4%;
+}
+
+.ipsDialog.ipsCirclesliderDialog .preselectLabel:hover {
+   background: #64B5F6/*ac*/;
+   color: #FFFFFF/*fcn*/;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.12)/*sca1*/, 0 3px 6px rgba(0,0,0,0.24)/*sca2*/;
+
+}
 /* --------------------------
    Sonstiges
    -------------------------- */
@@ -358,7 +592,7 @@ iframe {
 /* aussen - abdunkeln des Rests */
 .ipsDialog.modal {
   background-image: none;
-  background-color: rgba(0,0,0, 0.80);
+  background-color: rgba(0,0,0, 0.25);
 }
 
 /* innen */
@@ -367,7 +601,7 @@ iframe {
   background: #757575/*bcn*/;
   border-color: transparent;
   border-radius: 2px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25)/*scd1*/, 0 10px 10px rgba(0,0,0,0.22)/*scd2*/;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.48)/*scd1*/, 0 10px 10px rgba(0,0,0,0.24)/*scd2*/;
   bottom: 10%;
   left: 10%;
   right: 10%;
@@ -375,6 +609,11 @@ iframe {
   font-size: 17px;
 }
 
+/*
+.ipsContainer>.content>[class*='title.width=32px'].icon + .title{
+
+.ipsDialog>div {
+*/
 
 .ipsDialog>div>.content {
   right: 0px!important;
@@ -407,10 +646,10 @@ iframe {
 .ipsChart,
 .ipsDialog.ipsChartDialog>div>.content {
   background-image: none;
-  background: #757575/*bcg*/; 
+  background: #757575/*bcg*/;
 }
 
-/*sb*/._disabled/*/sb*/ .ipsChart {
+/*sb*//*/sb*/ .ipsChart {
   box-shadow: 0 1px 2px rgba(0,0,0,0.12)/*scc1*/, 0 1px 3px rgba(0,0,0,0.24)/*scc2*/;
 }
 
@@ -429,7 +668,7 @@ iframe {
 img {
   box-shadow: 0 1px 2px rgba(0,0,0,0.12)/*scc1*/, 0 1px 3px rgba(0,0,0,0.24)/*scc2*/;
 }
-   
+
 .ipsLogin {
     background-image: none;
 }
@@ -438,8 +677,8 @@ img {
     background-image: none;
 }
 
-.ipsCategory > .container .extended > .textBox, 
-.ipsCategory > .container .extended > .htmlBox, 
+.ipsCategory > .container .extended > .textBox,
+.ipsCategory > .container .extended > .htmlBox,
 .ipsCategory > .container .extended > .mailBox {
     background-image: none;
     background-color: transparent;
@@ -456,13 +695,13 @@ img {
 .ipsNotifications>.ipsNotification{
   border-radius: 3px;
   background-image: none;
-  background: #606060/*bcg*/;
+  background: #757575/*bcg*/;
   border-color: transparent;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25)/*scd1*/, 0 10px 10px rgba(0,0,0,0.22)/*scd2*/;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.48)/*scd1*/, 0 10px 10px rgba(0,0,0,0.24)/*scd2*/;
 }
 
 .ipsNotifications>.ipsNotification>.message{
-  background: #606060/*bcg*/;
+  background: #757575/*bcg*/;
   color: #FFFFFF/*fcn*/;
 }
 
@@ -471,7 +710,7 @@ img {
 }
 .ipsNotifications>.ipsNotification>.message.icon>div:first-child {
   left: 88%;
-  top: 16px; 
+  top: 16px;
 }
 
 .ipsNotifications>.ipsNotification>.message.icon>.content {
@@ -480,7 +719,7 @@ img {
   top: 16px;
 }
 /* ---------------------------------------------------------
-   IPS Edit mode 
+   IPS Edit mode
    --------------------------------------------------------- */
 
 .ipsDialog.ipsEditorDialog>div,
@@ -507,18 +746,18 @@ img {
 .ipsEditorSelectDialog>div,
 .ipsEditorSelectDialog .iconSmall,
 .ipsEditorDialog .iconSmall,
-.ipsEditorDialog .content 
+.ipsEditorDialog .content
 {
   background-color: #2196F3;
   opacity: 1.0 !important;
 }
 
-.ipsEditorSelectDialog .treeIcon, 
+.ipsEditorSelectDialog .treeIcon,
 .ipsEditorSelectDialog label
 {
   opacity: 1.0 !important;
 }
-.ipsDialog.ipsEditorDialog>div>.content>ol>li>select>option, 
+.ipsDialog.ipsEditorDialog>div>.content>ol>li>select>option,
 .ipsDialog.ipsEditorDialog>div>.content>select>option
 {
   background-color: #FAFAFA/*bc*/;
@@ -532,7 +771,7 @@ img {
 .new-text.iconExtraSmall
 {
   box-shadow: 0 0 4px rgba(0,0,0,0.48)/*scd1*/, 0 14px 28px rgba(0,0,0,0.24)/*scd2*/;
-  border-radius: 50%;  
+  border-radius: 50%;
   padding: 2px 4px 2px 0px;
   border-width: 0px !important;
   background-color: #2196F3;
@@ -563,7 +802,7 @@ img {
 /*
 input, textarea, keygen, select, button {
   font: 17px Arial;
-}  
+}
 */
 
 /*  Hierarchie

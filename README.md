@@ -2,27 +2,28 @@
 
 **Inhaltsverzeichnis**
 
-1. [Funktionsumfang](#1-funktionsumfang) 
+1. [Funktionsumfang](#1-funktionsumfang)
 2. [Systemanforderungen](#2-systemanforderungen)
 3. [Installation](#3-installation)
 4. [Anleitung](#4-anleitung)
-5. [Changelog](#5-changelog) 
-6. [Sonstiges](#6-sonstiges) 
+5. [CSS Hacks](#5-css-hacks)
+6. [Changelog](#5-changelog)
+7. [Sonstiges](#6-sonstiges)
 
 ![Beispiel grau_blau](docs/grau_blau.png?raw=true)
 
 
 ### 1. Funktionsumfang
 Basierend auf den originalen IP Symcon Skin stellt dieser Material Design Skin eine
-Alternative dar, die sich an das Material Design von Google anlehnt. 
+Alternative dar, die sich an das Material Design von Google anlehnt.
 
 Im Prinzip werden nur Teile der original IP-Symcon CSS Datei mit neuen Attributen
 versehen. Handhabung, Design und Bedienung entsprechen dem normalen WebFront.
 
-Als Icons werden entweder die originalen IP Symcon Icons, oder Kopien derer, bei denen lediglich die 
-Zeichenfarbe "weiß" (stroke="#ffffff") gegen "schwarz" (stroke="#000000") getauscht wurde, verwendet. 
+Als Icons werden entweder die originalen IP Symcon Icons, oder Kopien derer, bei denen lediglich die
+Zeichenfarbe "weiß" (stroke="#ffffff") gegen "schwarz" (stroke="#000000") getauscht wurde, verwendet.
 
-Über das optionale Modul [IPS MaterialDesignSkinOptions](https://github.com/Uhula/IPSMaterialDesignSkinOptions) lassen sich für den 
+Über das optionale Modul [IPS MaterialDesignSkinOptions](https://github.com/Uhula/IPSMaterialDesignSkinOptions) lassen sich für den
 Skin verschiedene Farbkombinationen (Themen) wählen, sowohl helle als auch dunkle Themen stehen zur Verfügung.
 
 * [Beispiel grau_blau_schatten](docs/grau_blau_schatten.png?raw=true "grau_blau_schatten")
@@ -35,12 +36,12 @@ Skin verschiedene Farbkombinationen (Themen) wählen, sowohl helle als auch dunk
 
 
 ### 2. Systemanforderungen
-* IP-Symcon Version 4.0  (4.1 noch nicht getestet!)
+* IP-Symcon Version 4.0 oder 4.1
 
 
 ### 3. Installation
-Im Objektbaum der IP Symcon Managment Console über die Kern-Instanz "Skins" folgende URL hinzufügen:
-`git://github.com/Uhula/IPSMaterialDesignSkin.git`
+Im Objektbaum der IP Symcon Managment Console über die Kern-Instanz "Skins" (nicht "Module") folgende URL hinzufügen:
+`git://github.com/Uhula/IPSMaterialDesignSkin.git` bzw. `https://github.com/Uhula/IPSMaterialDesignSkin.git`
 Der Skin wird hinzugefügt und kann anschließend verwendet werden.
 
 Die Gesamtgröße beträgt, bedingt durch die SVG Icons, rund 2.0 MB.
@@ -56,7 +57,7 @@ werden, wo sie notwendig sind. Z.B. bei Alarm- und Fehlerzuständen.
 * Kein Zwang, aber für das Layout wird empfohlen:
 
 ```
-    SplitPane 
+    SplitPane
     +-- TabPane (Menü, fixe Höhe: 34px) "Kopfzeile"
     |   +-- InfoWidgets 1  
     |   +-- InfoWidgets 2 usw  
@@ -80,7 +81,7 @@ gibt `git://github.com/Uhula/IPSMaterialDesignSkinOptions.git`
 
 #### Welche Anpassungen sind in der CSS vorhanden ?
 Um den Material Design Style zu erhalten, werden in der CSS Datei folgenden Einstellungen
-zum originalen Skin vorgenommen: 
+zum originalen Skin vorgenommen:
 * alle Border werden durch "transparent" unsichtbar geschaltet
 * alle Hintergründe werden flach, also ohne Verlauf dargestellt
 * Kopfzeile
@@ -104,12 +105,66 @@ zum originalen Skin vorgenommen:
 * Popups füllen zentriert 10% des Fensters, Ausnahme: Charts
 * Webfront-Edit-Mode: Buttons usw. mit Schatten
 
+### 5. CSS-Hacks
+IPS bietet leider keine Möglichkeit in den Instanzen individuelle CSS-Tags mit aufzunehmen,
+die dann im CSS ausgewertet werden könnten.
+Aber ;-)
+Jede Instanz hat ein Icon, welches im WebFront dann links vor dem Text angezeigt wird. Wenn man
+auf diese Icon verzichten kann (ich mag sie nicht), dann kann man hierüber CSS-Tags
+setzen. IPS rendet nämlich jeden Icon-Eintrag, egal ob das Icon existiert oder nicht.
 
-### 5. Changelog
+Im Eingabefeld des Icon-Names sind dann die CSS-Tags statt der Iconnamen einzugeben.
+
+Folgende CSS-Tags kann der MaterialDesignSkin interpretieren:
+
+#### link.show=true
+Für Charts und Select-Eingaben mit vielen Einträgen, erscheint im WebFront rechts in
+der jeweiligen Zeile ein Link in Form einer Schaltfläche. Wenn das nicht in jeder
+Zeile der Fall ist, sieht der rechte Rand zerfleddert aus. In den Zeilen/Instanzen,
+bei denen kein Link eingeblendet wird, kann man mit link.show=true trotzdem dafür sorgen,
+dass der Link-Bereich freigehalten wird (Konkret wird der rechte Rand des EIngabebereichs
+auf 36px gesetzt).
+Bsp:
+
+#### ele.width=32px | 48px | 64px | 80px | 96px
+Da die Breite der Werte in den num/Select-Zeilen abhängig vom Textinhalt ist,
+führt dieses teilweise zu unschönen Darstellungen. Über ele.width=XXpx kann die
+Breite der Wertdarstellung auf ein Minimum festgelegt werden. Die Werte
+erscheinen dann tabellarisch schön untereinander.
+Hinweis: Längere Textinhalte werden nicht abgeschnitten und müssen manuell
+gekürzt werden.
+
+#### title.color=accent
+Manchmal macht es Sinn innerhalb von Containern noch Zwischenüberschriften z.B.
+durch einen Link auf eine Dummy-Instanz zu bilden. Über title.color=accent kann
+diese Überschrift in der Accentfarbe eingefärbt werden und wirkt dadurch als
+Überschrift.
+
+#### title.width=32px | 64px | 128px
+Wenn mehrere Slider untereinander gesetzt werden, dann beginnen diese immer direkt
+nach der Bezeichnung (title). Bei unterschiedlich Breiten Bezeichnungen sieht
+das unruhig aus. Über title.width=XXpx kann die Bezeichnungsausgabe auf eine
+Mindestlänge gesetzt werden.
+Hinweis: Längere Textinhalte werden nicht abgeschnitten und müssen manuell
+gekürzt werden.
+
+#### slider.color=red | green | blue | white | yellow
+Slider werden normalerweise in der Accentfarbe gezeichnet. Bei RGB-Eingaben kann
+es aber gewünscht sein, diese in rot ... darzustellen. Über slider.color=XXX
+kann eine Einfärbung gesetzt werden.
+
+#### ele.style=btn
+Enum- bzw. Select-Eingaben werden immer als Switcheingaben dargestellt, also
+mit einem runden Rahmen versehen und das aktive Elemente ist in der Accentfarbe
+hinterlegt. Wird die Enum-Eingabe aber so genutzt, dass es eigentlich kein
+aktives Element gibt, sondern es sich um Schaltflächen handelt, so kann über
+ele.style=btn die Darstellung als Schaltfläche erzwungen werden.
+
+### 6. Changelog
 Siehe [:link:ChangeLog](./CHANGELOG.md).
 
 
-### 6. Sonstiges
+### 7. Sonstiges
 #### float / flex
 Alle Versuche die WebFront-Container sinnvoll in einem responsible Design darzustellen,
 scheiterten an den Anforderungen der Browser. So wird "display:flex" noch nicht von allen
@@ -121,8 +176,8 @@ Also, die WebFront so verwenden, wie sie gedacht sind: Statische Aufteilung des 
 #### Wünsche an IP Symcon
 Viele Wünsche gibt es nicht, jedoch würde es die CSS Möglichkeiten deutlich erweitern,
 wenn jede Instance zusätzlich eine Property "CSS classes" hätte, die man frei eingeben kann und die
-dann mit in <div class="... myclasses ..."> gerendert wird. Z.B. könnte man dann die Popups über CSS mit 
-unterschiedlichen Größen "aufpoppen" lassen ...   
+dann mit in <div class="... myclasses ..."> gerendert wird. Z.B. könnte man dann die Popups über CSS mit unterschiedlichen Größen "aufpoppen" lassen ...   
+Siehe hierzu auch Kapitel 5.
 
 
 :copyright:2016ff Uhula
