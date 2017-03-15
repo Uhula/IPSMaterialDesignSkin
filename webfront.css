@@ -182,10 +182,10 @@ body,
   background: none;
   border-radius: 16px;
   content: '';
-  top: 4px;
+  top: 0.25em;
   right: 1px;
   left: 2px;
-  height: 24px;
+  height: 1.3em;
   position: absolute;
   box-shadow: inset 0 1px 1px #64B5F6/*ac*/, 0 1px 1px #64B5F6/*ac*/;
   opacity:0.74;
