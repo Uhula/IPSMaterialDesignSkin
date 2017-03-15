@@ -28,7 +28,7 @@ Skin verschiedene Farbkombinationen (Themen) wählen, sowohl helle als auch dunk
 
 * [Beispiel grau_blau_schatten](docs/grau_blau_schatten.png?raw=true "grau_blau_schatten")
 * [Beispiel grau_blau](docs/grau_blau.png?raw=true "Beispiel grau_blau")
-* [Beispiel grau_blau_schatten_edit](docs/grau_blau_schatten_edit.png?raw=true "Beispiel grau_blau_schatten_edit")
+* [Beispiel grau_blau_edit](docs/grau_blau_edit.png?raw=true "Beispiel grau_blau_edit")
 * [Beispiel Grau braun_gruen](docs/braun_gruen.png?raw=true "Beispiel braun_gruen")
 * [Beispiel Grau gruen_orange_schatten](docs/gruen_orange_schatten.png?raw=true "Beispiel gruen_orange_schatten")
 * [Beispiel Grau d_grau_bernstein_schatten](docs/d_grau_bernstein_schatten.png?raw=true "Beispiel d_grau_bernstein_schatten")
