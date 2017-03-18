@@ -149,7 +149,7 @@ Mindestlänge gesetzt werden.
 Hinweis: Längere Textinhalte werden nicht abgeschnitten und müssen manuell
 gekürzt werden.
 
-#### slider.type=red | green | blue | white | yellow | hue | brightness | saturation | scale10
+#### slider.type=red | green | blue | white | yellow | hue | brightness | saturation | colortemp | scale10
 Slider werden normalerweise in der Accentfarbe gezeichnet. Bei RGB-Eingaben kann
 es aber gewünscht sein, diese in rot ... darzustellen. Über slider.type=XXX
 kann eine Einfärbung gesetzt werden. "hue" zeigt den Farbverlauf und "brightness"
@@ -158,7 +158,7 @@ bzw. "saturation" einen weiß/schwarz Verlauf.
 #### slider.text=hide
 Bei Slidern wird normalerweise der %-Wert angezeigt. Dieses ist aber manchmal
 sinnfrei, z.B. wenn mit dem Slider der Rotanteil mit 0 bis 255 bestimmt wird.
-Über slider.text=hide kann die Textausgabe unterdrückt werden. 
+Über slider.text=hide kann die Textausgabe unterdrückt werden.
 
 #### ele.style=btn
 Enum- bzw. Select-Eingaben werden immer als Switcheingaben dargestellt, also
